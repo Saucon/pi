@@ -74,3 +74,4 @@ dbpediaprop:country a rdf:Property .
 dbpediaprop:country rdfs:domain ex:recordInvestasi .
 dbpediaprop:country rdfs:domain dbpediaont:Country .
 
+
