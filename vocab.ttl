@@ -1,0 +1,76 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
+@prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
+@prefix dbpedia-id-prop: <http://id.dbpedia.org/property/> .
+@prefix dbpediares: <http://dbpedia.org/resource/> .
+@prefix dbpediaont: <http://dbpedia.org/ontology/> .
+@prefix dbpediaprop: <http://dbpedia.org/property/> .
+@prefix ex: <http://example.com/> .
+
+dbpedia-id-ont:District a rdfs:Class .
+dbpediaont:Country a rdfs:Class .
+dbpediaont:Company a rdfs:Class .
+
+ex:jenisPenanamanModal a rdfs:Class .
+ex:recordInvestasi a rdfs:Class .
+ex:recordImmigrant a rdfs:Class .
+ex:sektor a rdfs:Class .
+
+
+dbpedia-id-prop:luas a rdf:Property .
+dbpedia-id-prop:luas rdfs:domain dbpedia-id-ont:District .
+dbpedia-id-prop:luas rdfs:range xsd:float .
+
+
+
+ex:memilikiRecordImmigrant a rdf:Property .
+ex:memilikiRecordImmigrant rdfs:domain dbpedia-id-ont:District .
+ex:memilikiRecordImmigrant rdfs:range ex:recordImmigrant .
+
+
+dbpediaprop:immigrant a rdf:Property .
+dbpediaprop:immigrant rdfs:domain  ex:recordImmigrant .
+dbpediaprop:immigrant rdfs:range xsd:integer .
+
+dbpediaprop:year a rdf:Property .
+dbpediaprop:year rdfs:domain ex:recordImmigrant .
+dbpediaprop:year rdfs:range xsd:integer .
+
+
+
+
+ex:memilikiRecordInvestasi a rdf:Property .
+ex:memilikiRecordInvestasi rdfs:domain dbpedia-id-ont:District .
+ex:memilikiRecordInvestasi rdfs:range ex:recordInvestasi .
+
+
+dbpediaprop:company a rdf:Property .
+dbpediaprop:company rdfs:domain ex:recordInvestasi .
+dbpediaprop:company rdfs:range dbpediaont:Company .
+
+ex:jenisInvestasi a rdf:Property .
+ex:jenisInvestasi rdfs:domain ex:recordInvestasi .
+ex:jenisInvestasi rdfs:range ex:jenisPenanamanModal .
+
+ex:noIjin a rdf:Property .
+ex:noIjin rdfs:domain ex:recordInvestasi .
+ex:noIjin rdfs:range xsd:string .
+
+ex:jenisSektor a rdf:Property .
+ex:jenisSektor rdfs:domain ex:recordInvestasi .
+ex:jenisSektor rdfs:range ex:sektor .
+
+ex:investasiRupiah a rdf:Property .
+ex:investasiRupiah rdfs:domain ex:recordInvestasi .
+ex:investasiRupiah rdfs:range xsd:integer .
+
+ex:investasiDolar a rdf:Property .
+ex:investasiDolar rdfs:domain ex:recordInvestasi .
+ex:investasiDolar rdfs:range xsd:integer .
+
+dbpediaprop:country a rdf:Property .
+dbpediaprop:country rdfs:domain ex:recordInvestasi .
+dbpediaprop:country rdfs:domain dbpediaont:Country .
+

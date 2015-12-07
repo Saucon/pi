@@ -1,0 +1,72 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+
+@prefix ex-geo:   <http://example.org/geo#> .
+@prefix eg:       <http://example.org/ns#> .
+
+# -- Data Set --------------------------------------------
+
+eg:dataset-le3 a qb:DataSet;
+    dct:title       "Investasi dan Imigran per Kecamatan";
+    rdfs:label      "Investasi dan Imigran per Kecamatan";
+    rdfs:comment    "Investasi dan Imigran per Kecamatan kota Surabaya";
+    dct:description "Investasi dan Imigran per Kecamatan kota Surabaya";
+    dct:publisher   eg:organization ;
+    dct:issued      "2015-12-07"^^xsd:date;
+    dct:subject
+        sdmx-subject:2.3 ,      # regional and small area statistics
+        sdmx-subject:1.1 ,      # Health
+        ex-geo:surabaya;           # Wales
+    qb:structure eg:dsd-le3 ;  
+    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
+   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+    .
+
+eg:organization a org:Organization, foaf:Agent;
+    rdfs:label "Pemkot Surabaya" . 
+
+# -- Data structure definition ----------------------------
+
+eg:dsd-le3 a qb:DataStructureDefinition;
+    qb:component 
+    # The dimensions
+        [ qb:dimension eg:refArea;         qb:order 1 ],
+        [ qb:dimension eg:refPeriod;       qb:order 2; qb:componentAttachment qb:Slice ],
+        [ qb:dimension sdmx-dimension:sex; qb:order 3; qb:componentAttachment qb:Slice ];
+        
+    # The measure(s)
+    qb:component [ qb:measure eg:lifeExpectancy];
+    
+    # The attributes
+    qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
+                   qb:componentRequired "true"^^xsd:boolean;
+                   qb:componentAttachment qb:DataSet; ] ;
+    
+    # slices
+    qb:sliceKey eg:sliceByRegion ;
+    .
+    
+eg:sliceByRegion a qb:SliceKey;
+    rdfs:label "slice by region"@en;
+    rdfs:comment "Slice by grouping regions together, fixing sex and time values"@en;
+    qb:componentProperty eg:refPeriod, sdmx-dimension:sex ;
+    .
+
+
