@@ -105,7 +105,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1083;
 eg:luas 11.07;
 .
@@ -116,7 +116,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1993;
 eg:luas 11.07;
 .
@@ -127,7 +127,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1092;
 eg:luas 11.07;
 .
@@ -138,7 +138,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3043;
 eg:luas 11.07;
 .
@@ -149,7 +149,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1528;
 eg:luas 11.07;
 .
@@ -160,7 +160,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 982;
 eg:luas 11.07;
 .
@@ -171,7 +171,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 11.07;
 eg:luas 11.07;
 .
@@ -182,7 +182,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1541;
 eg:luas 12.46;
 .
@@ -193,7 +193,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1320;
 eg:luas 12.46;
 .
@@ -204,7 +204,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 896;
 eg:luas 12.46;
 .
@@ -215,7 +215,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2348;
 eg:luas 12.46;
 .
@@ -226,7 +226,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1642;
 eg:luas 12.46;
 .
@@ -237,7 +237,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2125;
 eg:luas 12.46;
 .
@@ -248,7 +248,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wiyung ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 12.46;
 eg:luas 12.46;
 .
@@ -259,7 +259,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1870;
 eg:luas 14.21;
 .
@@ -270,7 +270,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1652;
 eg:luas 14.21;
 .
@@ -281,7 +281,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1181;
 eg:luas 14.21;
 .
@@ -292,7 +292,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2406;
 eg:luas 14.21;
 .
@@ -303,7 +303,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1976;
 eg:luas 14.21;
 .
@@ -314,7 +314,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2371;
 eg:luas 14.21;
 .
@@ -325,7 +325,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Mulyorejo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 14.21;
 eg:luas 14.21;
 .
@@ -336,7 +336,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1287;
 eg:luas 16.05;
 .
@@ -347,7 +347,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2191;
 eg:luas 16.05;
 .
@@ -358,7 +358,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 752;
 eg:luas 16.05;
 .
@@ -369,7 +369,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3167;
 eg:luas 16.05;
 .
@@ -380,7 +380,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1370;
 eg:luas 16.05;
 .
@@ -391,7 +391,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1635;
 eg:luas 16.05;
 .
@@ -402,7 +402,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Lakarsantri ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 16.05;
 eg:luas 16.05;
 .
@@ -413,7 +413,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1474;
 eg:luas 19.01;
 .
@@ -424,7 +424,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1518;
 eg:luas 19.01;
 .
@@ -435,7 +435,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 984;
 eg:luas 19.01;
 .
@@ -446,7 +446,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3142;
 eg:luas 19.01;
 .
@@ -457,7 +457,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2146;
 eg:luas 19.01;
 .
@@ -468,7 +468,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2310;
 eg:luas 19.01;
 .
@@ -479,7 +479,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Pakal ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 19.01;
 eg:luas 19.01;
 .
@@ -490,7 +490,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 701;
 eg:luas 2.59;
 .
@@ -501,7 +501,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1634;
 eg:luas 2.59;
 .
@@ -512,7 +512,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1038;
 eg:luas 2.59;
 .
@@ -523,7 +523,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2862;
 eg:luas 2.59;
 .
@@ -534,7 +534,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1091;
 eg:luas 2.59;
 .
@@ -545,7 +545,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 3981;
 eg:luas 2.59;
 .
@@ -556,7 +556,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Simokerto ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 2.59;
 eg:luas 2.59;
 .
@@ -567,7 +567,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1345;
 eg:luas 20.42;
 .
@@ -578,7 +578,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1168;
 eg:luas 20.42;
 .
@@ -589,7 +589,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 700;
 eg:luas 20.42;
 .
@@ -600,7 +600,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2038;
 eg:luas 20.42;
 .
@@ -611,7 +611,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1530;
 eg:luas 20.42;
 .
@@ -622,7 +622,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2125;
 eg:luas 20.42;
 .
@@ -633,7 +633,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sambikerep ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 20.42;
 eg:luas 20.42;
 .
@@ -644,7 +644,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 2611;
 eg:luas 21.08;
 .
@@ -655,7 +655,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2974;
 eg:luas 21.08;
 .
@@ -666,7 +666,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 2362;
 eg:luas 21.08;
 .
@@ -677,7 +677,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 6362;
 eg:luas 21.08;
 .
@@ -688,7 +688,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 3989;
 eg:luas 21.08;
 .
@@ -699,7 +699,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 3001;
 eg:luas 21.08;
 .
@@ -710,7 +710,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Rungkut ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 21.08;
 eg:luas 21.08;
 .
@@ -721,7 +721,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 2267;
 eg:luas 23.69;
 .
@@ -732,7 +732,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2279;
 eg:luas 23.69;
 .
@@ -743,7 +743,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 2041;
 eg:luas 23.69;
 .
@@ -754,7 +754,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 4219;
 eg:luas 23.69;
 .
@@ -765,7 +765,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2663;
 eg:luas 23.69;
 .
@@ -776,7 +776,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 3420;
 eg:luas 23.69;
 .
@@ -787,7 +787,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukolilo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 23.69;
 eg:luas 23.69;
 .
@@ -798,7 +798,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1568;
 eg:luas 26.78;
 .
@@ -809,7 +809,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1841;
 eg:luas 26.78;
 .
@@ -820,7 +820,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1060;
 eg:luas 26.78;
 .
@@ -831,7 +831,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 4504;
 eg:luas 26.78;
 .
@@ -842,7 +842,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2396;
 eg:luas 26.78;
 .
@@ -853,7 +853,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 3071;
 eg:luas 26.78;
 .
@@ -864,7 +864,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Benowo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 26.78;
 eg:luas 26.78;
 .
@@ -875,7 +875,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1250;
 eg:luas 3.86;
 .
@@ -886,7 +886,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2539;
 eg:luas 3.86;
 .
@@ -897,7 +897,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1240;
 eg:luas 3.86;
 .
@@ -908,7 +908,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3995;
 eg:luas 3.86;
 .
@@ -919,7 +919,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1726;
 eg:luas 3.86;
 .
@@ -930,7 +930,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1,318;
 eg:luas 3.86;
 .
@@ -941,7 +941,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bubutan ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 3.86;
 eg:luas 3.86;
 .
@@ -952,7 +952,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 676;
 eg:luas 4.04;
 .
@@ -963,7 +963,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1252;
 eg:luas 4.04;
 .
@@ -974,7 +974,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 653;
 eg:luas 4.04;
 .
@@ -985,7 +985,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 1894;
 eg:luas 4.04;
 .
@@ -996,7 +996,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 73;
 eg:luas 4.04;
 .
@@ -1007,7 +1007,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 503;
 eg:luas 4.04;
 .
@@ -1018,7 +1018,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Genteng ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 4.04;
 eg:luas 4.04;
 .
@@ -1029,7 +1029,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1447;
 eg:luas 4.19;
 .
@@ -1040,7 +1040,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1196;
 eg:luas 4.19;
 .
@@ -1051,7 +1051,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 883;
 eg:luas 4.19;
 .
@@ -1062,7 +1062,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2153;
 eg:luas 4.19;
 .
@@ -1073,7 +1073,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1560;
 eg:luas 4.19;
 .
@@ -1084,7 +1084,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1795;
 eg:luas 4.19;
 .
@@ -1095,7 +1095,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Jambangan ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 4.19;
 eg:luas 4.19;
 .
@@ -1106,7 +1106,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 895;
 eg:luas 4.29;
 .
@@ -1117,7 +1117,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1817;
 eg:luas 4.29;
 .
@@ -1128,7 +1128,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1063;
 eg:luas 4.29;
 .
@@ -1139,7 +1139,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3394;
 eg:luas 4.29;
 .
@@ -1150,7 +1150,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1852;
 eg:luas 4.29;
 .
@@ -1161,7 +1161,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 278;
 eg:luas 4.29;
 .
@@ -1172,7 +1172,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 4.29;
 eg:luas 4.29;
 .
@@ -1183,7 +1183,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 744;
 eg:luas 5.44;
 .
@@ -1194,7 +1194,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1228;
 eg:luas 5.44;
 .
@@ -1205,7 +1205,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 502;
 eg:luas 5.44;
 .
@@ -1216,7 +1216,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2628;
 eg:luas 5.44;
 .
@@ -1227,7 +1227,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 737;
 eg:luas 5.44;
 .
@@ -1238,7 +1238,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2545;
 eg:luas 5.44;
 .
@@ -1249,7 +1249,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Asemrowo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 5.44;
 eg:luas 5.44;
 .
@@ -1260,7 +1260,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1098;
 eg:luas 5.52;
 .
@@ -1271,7 +1271,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1042;
 eg:luas 5.52;
 .
@@ -1282,7 +1282,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1113;
 eg:luas 5.52;
 .
@@ -1293,7 +1293,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2693;
 eg:luas 5.52;
 .
@@ -1304,7 +1304,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1519;
 eg:luas 5.52;
 .
@@ -1315,7 +1315,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1872;
 eg:luas 5.52;
 .
@@ -1326,7 +1326,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:TenggilisMejoyo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 5.52;
 eg:luas 5.52;
 .
@@ -1337,7 +1337,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1307;
 eg:luas 6.07;
 .
@@ -1348,7 +1348,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1006;
 eg:luas 6.07;
 .
@@ -1359,7 +1359,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 800;
 eg:luas 6.07;
 .
@@ -1370,7 +1370,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 1723;
 eg:luas 6.07;
 .
@@ -1381,7 +1381,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1271;
 eg:luas 6.07;
 .
@@ -1392,7 +1392,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1541;
 eg:luas 6.07;
 .
@@ -1403,7 +1403,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gayungan ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 6.07;
 eg:luas 6.07;
 .
@@ -1414,7 +1414,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 3899;
 eg:luas 6.78;
 .
@@ -1425,7 +1425,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 4463;
 eg:luas 6.78;
 .
@@ -1436,7 +1436,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 3192;
 eg:luas 6.78;
 .
@@ -1447,7 +1447,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 8124;
 eg:luas 6.78;
 .
@@ -1458,7 +1458,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 5351;
 eg:luas 6.78;
 .
@@ -1469,7 +1469,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 5192;
 eg:luas 6.78;
 .
@@ -1480,7 +1480,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Kenjeran ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 6.78;
 eg:luas 6.78;
 .
@@ -1491,7 +1491,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1411;
 eg:luas 6.78;
 .
@@ -1502,7 +1502,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2097;
 eg:luas 6.78;
 .
@@ -1513,7 +1513,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1027;
 eg:luas 6.78;
 .
@@ -1524,7 +1524,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 4295;
 eg:luas 6.78;
 .
@@ -1535,7 +1535,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1986;
 eg:luas 6.78;
 .
@@ -1546,7 +1546,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2630;
 eg:luas 6.78;
 .
@@ -1557,7 +1557,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonocolo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 6.78;
 eg:luas 6.78;
 .
@@ -1568,7 +1568,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 860;
 eg:luas 6.8;
 .
@@ -1579,7 +1579,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 939;
 eg:luas 6.8;
 .
@@ -1590,7 +1590,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1022;
 eg:luas 6.8;
 .
@@ -1601,7 +1601,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2116;
 eg:luas 6.8;
 .
@@ -1612,7 +1612,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1122;
 eg:luas 6.8;
 .
@@ -1623,7 +1623,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2346;
 eg:luas 6.8;
 .
@@ -1634,7 +1634,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:PabeanCantikan ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 6.8;
 eg:luas 6.8;
 .
@@ -1645,7 +1645,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 3126;
 eg:luas 6.93;
 .
@@ -1656,7 +1656,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2039;
 eg:luas 6.93;
 .
@@ -1667,7 +1667,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 2454;
 eg:luas 6.93;
 .
@@ -1678,7 +1678,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 5193;
 eg:luas 6.93;
 .
@@ -1689,7 +1689,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 3254;
 eg:luas 6.93;
 .
@@ -1700,7 +1700,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 3726;
 eg:luas 6.93;
 .
@@ -1711,7 +1711,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sawahan ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 6.93;
 eg:luas 6.93;
 .
@@ -1722,7 +1722,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 943;
 eg:luas 7.64;
 .
@@ -1733,7 +1733,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1097;
 eg:luas 7.64;
 .
@@ -1744,7 +1744,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 727;
 eg:luas 7.64;
 .
@@ -1755,7 +1755,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 1,307;
 eg:luas 7.64;
 .
@@ -1766,7 +1766,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1125;
 eg:luas 7.64;
 .
@@ -1777,7 +1777,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1805;
 eg:luas 7.64;
 .
@@ -1788,7 +1788,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Bulak ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 7.64;
 eg:luas 7.64;
 .
@@ -1799,7 +1799,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 2054;
 eg:luas 7.99;
 .
@@ -1810,7 +1810,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2342;
 eg:luas 7.99;
 .
@@ -1821,7 +1821,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1643;
 eg:luas 7.99;
 .
@@ -1832,7 +1832,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3990;
 eg:luas 7.99;
 .
@@ -1843,7 +1843,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2106;
 eg:luas 7.99;
 .
@@ -1854,7 +1854,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1152;
 eg:luas 7.99;
 .
@@ -1865,7 +1865,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Gubeng ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 7.99;
 eg:luas 7.99;
 .
@@ -1876,7 +1876,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 2612;
 eg:luas 8.34;
 .
@@ -1887,7 +1887,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2171;
 eg:luas 8.34;
 .
@@ -1898,7 +1898,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1808;
 eg:luas 8.34;
 .
@@ -1909,7 +1909,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 4530;
 eg:luas 8.34;
 .
@@ -1920,7 +1920,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 3104;
 eg:luas 8.34;
 .
@@ -1931,7 +1931,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2449;
 eg:luas 8.34;
 .
@@ -1942,7 +1942,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Krembangan ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 8.34;
 eg:luas 8.34;
 .
@@ -1953,7 +1953,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 704;
 eg:luas 8.47;
 .
@@ -1964,7 +1964,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 4223;
 eg:luas 8.47;
 .
@@ -1975,7 +1975,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1165;
 eg:luas 8.47;
 .
@@ -1986,7 +1986,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 5408;
 eg:luas 8.47;
 .
@@ -1997,7 +1997,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2703;
 eg:luas 8.47;
 .
@@ -2008,7 +2008,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1471;
 eg:luas 8.47;
 .
@@ -2019,7 +2019,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Wonokromo ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 8.47;
 eg:luas 8.47;
 .
@@ -2030,7 +2030,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 3002;
 eg:luas 8.76;
 .
@@ -2041,7 +2041,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 3642;
 eg:luas 8.76;
 .
@@ -2052,7 +2052,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1614;
 eg:luas 8.76;
 .
@@ -2063,7 +2063,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 5879;
 eg:luas 8.76;
 .
@@ -2074,7 +2074,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 3326;
 eg:luas 8.76;
 .
@@ -2085,7 +2085,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 3430;
 eg:luas 8.76;
 .
@@ -2096,7 +2096,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Semampir ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 8.76;
 eg:luas 8.76;
 .
@@ -2107,7 +2107,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 3465;
 eg:luas 8.99;
 .
@@ -2118,7 +2118,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 4096;
 eg:luas 8.99;
 .
@@ -2129,7 +2129,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 3441;
 eg:luas 8.99;
 .
@@ -2140,7 +2140,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 6625;
 eg:luas 8.99;
 .
@@ -2151,7 +2151,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 4478;
 eg:luas 8.99;
 .
@@ -2162,7 +2162,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 2612;
 eg:luas 8.99;
 .
@@ -2173,7 +2173,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tambaksari ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 8.99;
 eg:luas 8.99;
 .
@@ -2184,7 +2184,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 883;
 eg:luas 9.23;
 .
@@ -2195,7 +2195,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 2241;
 eg:luas 9.23;
 .
@@ -2206,7 +2206,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1075;
 eg:luas 9.23;
 .
@@ -2217,7 +2217,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3622;
 eg:luas 9.23;
 .
@@ -2228,7 +2228,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1642;
 eg:luas 9.23;
 .
@@ -2239,7 +2239,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1102;
 eg:luas 9.23;
 .
@@ -2250,7 +2250,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:KarangPilang ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 9.23;
 eg:luas 9.23;
 .
@@ -2261,7 +2261,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 2080;
 eg:luas 9.23;
 .
@@ -2272,7 +2272,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1446;
 eg:luas 9.23;
 .
@@ -2283,7 +2283,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 2090;
 eg:luas 9.23;
 .
@@ -2294,7 +2294,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 3468;
 eg:luas 9.23;
 .
@@ -2305,7 +2305,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2566;
 eg:luas 9.23;
 .
@@ -2316,7 +2316,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1150;
 eg:luas 9.23;
 .
@@ -2327,7 +2327,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Sukomanunggal ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 9.23;
 eg:luas 9.23;
 .
@@ -2338,7 +2338,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1487;
 eg:luas 9.71;
 .
@@ -2349,7 +2349,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 1328;
 eg:luas 9.71;
 .
@@ -2360,7 +2360,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 1055;
 eg:luas 9.71;
 .
@@ -2371,7 +2371,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 2768;
 eg:luas 9.71;
 .
@@ -2382,7 +2382,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 2055;
 eg:luas 9.71;
 .
@@ -2393,7 +2393,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1856;
 eg:luas 9.71;
 .
@@ -2404,7 +2404,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:GunungAnyar ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 9.71;
 eg:luas 9.71;
 .
@@ -2415,7 +2415,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20081 ;
+eg:refPeriod 2009 ;
 eg:imigran 1305;
 eg:luas 9.94;
 .
@@ -2426,7 +2426,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20082 ;
+eg:refPeriod 2010 ;
 eg:imigran 875;
 eg:luas 9.94;
 .
@@ -2437,7 +2437,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20083 ;
+eg:refPeriod 2011 ;
 eg:imigran 768;
 eg:luas 9.94;
 .
@@ -2448,7 +2448,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20084 ;
+eg:refPeriod 2012 ;
 eg:imigran 1698;
 eg:luas 9.94;
 .
@@ -2459,7 +2459,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20085 ;
+eg:refPeriod 2013 ;
 eg:imigran 1161;
 eg:luas 9.94;
 .
@@ -2470,7 +2470,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20086 ;
+eg:refPeriod 2014 ;
 eg:imigran 1622;
 eg:luas 9.94;
 .
@@ -2481,7 +2481,7 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:DukuhPakis ;
-eg:refPeriod 20087 ;
+eg:refPeriod 2015 ;
 eg:imigran 9.94;
 eg:luas 9.94;
 .
