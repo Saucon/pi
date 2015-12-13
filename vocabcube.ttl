@@ -20,8 +20,8 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ex-geo:   <https://bitbucket.org/Saucon/pemrograman-integratif/raw/94ee45534b2acd8746209c481e2d16e7d45167c5/vocabcube.ttl#> .
-@prefix eg:       <https://bitbucket.org/Saucon/pemrograman-integratif/raw/94ee45534b2acd8746209c481e2d16e7d45167c5/vocabcube.ttl#> .
+@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
 
 @prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
 @prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
@@ -49,8 +49,7 @@ eg:dataset-investasi a qb:DataSet;
         sdmx-subject:2.3 ,      # regional and small area statistics
         sdmx-subject:1.1 ,      # Health
         ex-geo:surabaya;           # Wales
-    qb:structure eg:dsd-le3 ;  
-    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
+    qb:structure eg:dsd-investasi ;  
    # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
     .
 
