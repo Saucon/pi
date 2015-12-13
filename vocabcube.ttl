@@ -20,8 +20,8 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
-@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+@prefix ex-geo:   <http://pastebin.com/raw.php?i=NrQURn6F#> .
+@prefix eg:       <http://pastebin.com/raw.php?i=NrQURn6F#> .
 
 @prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
 @prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
@@ -45,11 +45,12 @@ eg:dataset-investasi a qb:DataSet;
     dct:description "Investasi di Surabaya";
     dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
-    #dct:subject
-    #    sdmx-subject:2.3 ,      # regional and small area statistics
-    #    sdmx-subject:1.1 ,      # Health
-     #   ex-geo:surabaya;           # Wales
+  #  dct:subject
+  #      sdmx-subject:2.3 ,      # regional and small area statistics
+  #      sdmx-subject:1.1 ,      # Health
+   #     ex-geo:surabaya;           # Wales
     qb:structure eg:dsd-investasi ;  
+   # sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
    # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
     .
 
@@ -1230,7 +1231,3 @@ eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
 eg:investasiDolar 27758000;
 eg:investasiRupiah 0;
 .
-
-
-
-
