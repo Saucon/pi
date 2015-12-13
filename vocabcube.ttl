@@ -46,28 +46,9 @@ eg:dataset-investasi a qb:DataSet;
     dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
     qb:structure eg:dsd-investasi ;  
-   # sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
-   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
     .
 
-eg:dataset-imigran a qb:DataSet;
-   dct:title       "Imigran di Surabaya";
-    rdfs:label      "Imigran di Surabaya";
-    rdfs:comment    "Imigran di Surabaya";
-    dct:description "Imigran di Surabaya";
-    dct:publisher   eg:organization ;
-    dct:issued      "2015-12-07"^^xsd:date;
-
-    qb:structure eg:dsd-imigran ;  
-#    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
-   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
-   .
-
-#eg:organization a org:Organization, foaf:Agent;
-#    rdfs:label "Pemkot Surabaya" . 
-
 # -- Data structure definition ----------------------------
-
 eg:dsd-investasi a qb:DataStructureDefinition;
     qb:component 
     # The dimensions
@@ -83,16 +64,6 @@ eg:dsd-investasi a qb:DataStructureDefinition;
                 [qb:measure eg:investasiDolar];
     .
     
-eg:dsd-imigran a qb:DataStructureDefinition;
-    qb:component 
-   #  The dimensions
-        [qb:dimension eg:refKecamatan],
-        [qb:dimension eg:refPeriod];
-        
-    # The measure(s)
-   qb:component[qb:measure eg:imigran];
- .
-
 
 # -- Dimensions and measures  ----------------------------
 # -- Dimensions
@@ -101,7 +72,7 @@ eg:refPeriod a rdf:Property, qb:DimensionProperty;
     rdfs:label "Tahunan";
     rdfs:subPropertyOf sdmx-dimension:refPeriod;
     rdfs:range xsd:integer;
-    qb:concept sdmx-concept:timePeriod ;
+    qb:concept sdmx-concept:refPeriod ;
     .
 
 eg:refKecamatan a rdf:Property, qb:DimensionProperty;
@@ -1225,12 +1196,4 @@ eg:investasiDolar 27758000;
 eg:investasiRupiah 0;
 .
 
-eg:recordImigran1
-a eg:recordImigran ;
-a qb:Observation ;
-qb:dataSet eg:dataset-imigran ;
-eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 2009 ;
-eg:imigran 1083;
-.
 

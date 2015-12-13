@@ -1,0 +1,112 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+
+
+@prefix sdmx:        <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+
+@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+
+@prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
+@prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
+#@prefix dbpedia-id-prop: <http://id.dbpedia.org/property/> .
+@prefix dbpediares: <http://dbpedia.org/resource/> .
+@prefix dbpediaont: <http://dbpedia.org/ontology/> .
+#@prefix dbpediaprop: <http://dbpedia.org/property/> .
+
+# -- Vocab -----------------------------------------------
+eg:recordImigran a rdfs:Class .
+# -- Data Set --------------------------------------------
+
+
+eg:dataset-imigran a qb:DataSet;
+   dct:title       "Imigran di Surabaya";
+    rdfs:label      "Imigran di Surabaya";
+    rdfs:comment    "Imigran di Surabaya";
+    dct:description "Imigran di Surabaya";
+    dct:publisher   eg:organization ;
+    dct:issued      "2015-12-07"^^xsd:date;
+
+    qb:structure eg:dsd-imigran ;  
+#    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
+   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+   .
+
+#eg:organization a org:Organization, foaf:Agent;
+#    rdfs:label "Pemkot Surabaya" . 
+
+# -- Data structure definition ----------------------------
+
+    
+eg:dsd-imigran a qb:DataStructureDefinition;
+    qb:component 
+   #  The dimensions
+        [qb:dimension eg:refKecamatan],
+        [qb:dimension eg:refPeriod];
+        
+    # The measure(s)
+   qb:component[qb:measure eg:imigran];
+ .
+
+
+# -- Dimensions and measures  ----------------------------
+# -- Dimensions
+
+eg:refPeriod a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Tahunan";
+    rdfs:subPropertyOf sdmx-dimension:refPeriod;
+    rdfs:range xsd:integer;
+    qb:concept sdmx-concept:refPeriod ;
+    .
+
+eg:refKecamatan a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Kecamatan";
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range dbpedia-id-ont:District;
+    qb:concept sdmx-concept:refArea ;
+    .
+
+eg:luas  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Luas Kecamatan";
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range xsd:decimal ;
+    qb:concept sdmx-concept:obsValue;
+    .
+
+# -- Measure
+eg:imigran  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Imigran";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:integer ;
+    .
+
+
+# -- Observations -----------------------------------------
+
+eg:recordImigran1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 2009 ;
+
+eg:imigran 1083;
+eg:luas 11.07;
+.
+
