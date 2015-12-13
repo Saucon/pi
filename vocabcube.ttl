@@ -20,8 +20,8 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ex-geo:   <https://bitbucket.org/Saucon/pemrograman-integratif/raw/ccc7e6deb0837ef7036c1e9450d3f2a0261024bb/vocabcube.ttl#> .
-@prefix eg:       <https://bitbucket.org/Saucon/pemrograman-integratif/raw/ccc7e6deb0837ef7036c1e9450d3f2a0261024bb/vocabcube.ttl#> .
+@prefix ex-geo:   <https://bitbucket.org/Saucon/pemrograman-integratif/raw/94ee45534b2acd8746209c481e2d16e7d45167c5/vocabcube.ttl#> .
+@prefix eg:       <https://bitbucket.org/Saucon/pemrograman-integratif/raw/94ee45534b2acd8746209c481e2d16e7d45167c5/vocabcube.ttl#> .
 
 @prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
 @prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
