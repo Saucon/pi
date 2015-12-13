@@ -59,8 +59,7 @@ eg:dsd-imigran a qb:DataStructureDefinition;
    #  The dimensions
         [qb:dimension eg:refKecamatan],
         [qb:dimension eg:refPeriod],
-        [qb:dimension eg:luas],
-        ;
+        [qb:dimension eg:luas];
         
     # The measure(s)
    qb:component[qb:measure eg:imigran];
