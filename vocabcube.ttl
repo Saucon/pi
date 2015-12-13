@@ -91,7 +91,7 @@ eg:dsd-imigran a qb:DataStructureDefinition;
         
     # The measure(s)
    qb:component[qb:measure eg:imigran];
- # .
+ .
 
 
 # -- Dimensions and measures  ----------------------------
