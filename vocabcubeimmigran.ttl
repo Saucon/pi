@@ -58,7 +58,9 @@ eg:dsd-imigran a qb:DataStructureDefinition;
     qb:component 
    #  The dimensions
         [qb:dimension eg:refKecamatan],
-        [qb:dimension eg:refPeriod];
+        [qb:dimension eg:refPeriod],
+        [qb:dimension eg:luas],
+        ;
         
     # The measure(s)
    qb:component[qb:measure eg:imigran];
@@ -85,7 +87,7 @@ eg:refKecamatan a rdf:Property, qb:DimensionProperty;
 eg:luas  a rdf:Property, qb:DimensionProperty;
     rdfs:label "Luas Kecamatan";
     rdfs:subPropertyOf sdmx-dimension:refPeriod;
-    rdfs:range xsd:integer ;
+    rdfs:range xsd:decimal ;
     qb:concept sdmx-concept:refPeriod;
     .
 
@@ -106,7 +108,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
 eg:refPeriod 2009 ;
 eg:imigran 1083;
-eg:luas 11;
+eg:luas 11,07;
 .
 
 eg:recordImigran1_2
@@ -116,5 +118,5 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
 eg:refPeriod 2010 ;
 eg:imigran 1993;
-eg:luas 11;
+eg:luas 11,07;
 .
