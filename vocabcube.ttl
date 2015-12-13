@@ -45,30 +45,23 @@ eg:dataset-investasi a qb:DataSet;
     dct:description "Investasi di Surabaya";
     dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
-  #  dct:subject
-  #      sdmx-subject:2.3 ,      # regional and small area statistics
-  #      sdmx-subject:1.1 ,      # Health
-   #     ex-geo:surabaya;           # Wales
     qb:structure eg:dsd-investasi ;  
    # sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
    # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
     .
 
-#eg:dataset-imigran a qb:DataSet;
- #   dct:title       "Imigran di Surabaya";
-#    rdfs:label      "Imigran di Surabaya";
-#    rdfs:comment    "Imigran di Surabaya";
-#    dct:description "Imigran di Surabaya";
-#    dct:publisher   eg:organization ;
- #   dct:issued      "2015-12-07"^^xsd:date;
-#    dct:subject
-#        sdmx-subject:2.3 ,      # regional and small area statistics
-#        sdmx-subject:1.1 ,      # Health
-#        ex-geo:surabaya;           # Wales
- #   qb:structure eg:dsd-le3 ;  
+eg:dataset-imigran a qb:DataSet;
+   dct:title       "Imigran di Surabaya";
+    rdfs:label      "Imigran di Surabaya";
+    rdfs:comment    "Imigran di Surabaya";
+    dct:description "Imigran di Surabaya";
+    dct:publisher   eg:organization ;
+    dct:issued      "2015-12-07"^^xsd:date;
+
+    qb:structure eg:dsd-imigran ;  
 #    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
    # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
-#    .
+   .
 
 #eg:organization a org:Organization, foaf:Agent;
 #    rdfs:label "Pemkot Surabaya" . 
@@ -90,15 +83,15 @@ eg:dsd-investasi a qb:DataStructureDefinition;
                 [qb:measure eg:investasiDolar];
     .
     
-#eg:dsd-imigran a qb:DataStructureDefinition;
- #   qb:component 
-    # The dimensions
- #       [qb:dimension eg:refKecamatan],
- #       [qb:dimension eg:refPeriod];
+eg:dsd-imigran a qb:DataStructureDefinition;
+    qb:component 
+   #  The dimensions
+        [qb:dimension eg:refKecamatan],
+        [qb:dimension eg:refPeriod];
         
     # The measure(s)
- #   qb:component[qb:measure eg:imigran];
- #   .
+   qb:component[qb:measure eg:imigran];
+ # .
 
 
 # -- Dimensions and measures  ----------------------------
@@ -1231,3 +1224,12 @@ eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
 eg:investasiDolar 27758000;
 eg:investasiRupiah 0;
 .
+
+eg:recordImigran1
+a eg:recordImigran ;
+a qb:Observation ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 2009 ;
+eg:imigran 1083;
+
+
