@@ -1108,7 +1108,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20081 ;
 eg:imigran 895;
-eg:luas 4,29;
+eg:luas 4.29;
 .
 
 
@@ -1119,7 +1119,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20082 ;
 eg:imigran 1817;
-eg:luas 4,29;
+eg:luas 4.29;
 .
 
 
@@ -1130,7 +1130,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20083 ;
 eg:imigran 1063;
-eg:luas 4,29;
+eg:luas 4.29;
 .
 
 
@@ -1141,7 +1141,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20084 ;
 eg:imigran 3394;
-eg:luas 4,29;
+eg:luas 4.29;
 .
 
 
@@ -1152,7 +1152,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20085 ;
 eg:imigran 1852;
-eg:luas 4,29;
+eg:luas 4.29;
 .
 
 
@@ -1163,7 +1163,7 @@ qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20086 ;
 eg:imigran 278;
-eg:luas 4,29;
+eg:luas 4.29;
 .
 
 
@@ -1173,8 +1173,8 @@ a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tegalsari ;
 eg:refPeriod 20087 ;
-eg:imigran 4,29;
-eg:luas 4,29;
+eg:imigran 4.29;
+eg:luas 4.29;
 .
 
 
@@ -2485,3 +2485,4 @@ eg:refPeriod 20087 ;
 eg:imigran 9.94;
 eg:luas 9.94;
 .
+
