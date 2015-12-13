@@ -84,9 +84,9 @@ eg:refKecamatan a rdf:Property, qb:DimensionProperty;
 
 eg:luas  a rdf:Property, qb:DimensionProperty;
     rdfs:label "Luas Kecamatan";
-    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod;
     rdfs:range xsd:decimal ;
-    qb:concept sdmx-concept:obsValue;
+    qb:concept sdmx-concept:refPeriod;
     .
 
 # -- Measure
@@ -99,14 +99,22 @@ eg:imigran  a rdf:Property, qb:MeasureProperty;
 
 # -- Observations -----------------------------------------
 
-eg:recordImigran1
+eg:recordImigran1_1
 a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
 eg:refPeriod 2009 ;
-
 eg:imigran 1083;
 eg:luas 11.07;
 .
 
+eg:recordImigran1_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 2010 ;
+eg:imigran 1993;
+eg:luas 11.07;
+.
