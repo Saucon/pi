@@ -23,14 +23,26 @@
 @prefix ex-geo:   <http://example.org/geo#> .
 @prefix eg:       <http://example.org/ns#> .
 
+@prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
+@prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
+#@prefix dbpedia-id-prop: <http://id.dbpedia.org/property/> .
+@prefix dbpediares: <http://dbpedia.org/resource/> .
+@prefix dbpediaont: <http://dbpedia.org/ontology/> .
+#@prefix dbpediaprop: <http://dbpedia.org/property/> .
 
+# -- Vocab -----------------------------------------------
+ex-geo:Negara a rdfs:Class .
+ex-geo:Perusahaan a rdfs:Class .
+
+eg:recordInvestasi a rdfs:Class .
+eg:recordImigran a rdfs:Class .
 # -- Data Set --------------------------------------------
 
-eg:dataset-le3 a qb:DataSet;
-    dct:title       "Investasi dan Imigran per Kecamatan";
-    rdfs:label      "Investasi dan Imigran per Kecamatan";
-    rdfs:comment    "Investasi dan Imigran per Kecamatan kota Surabaya";
-    dct:description "Investasi dan Imigran per Kecamatan kota Surabaya";
+eg:dataset-investasi a qb:DataSet;
+    dct:title       "Investasi di Surabaya";
+    rdfs:label      "Investasi di Surabaya";
+    rdfs:comment    "Investasi di Surabaya";
+    dct:description "Investasi di Surabaya";
     dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
     dct:subject
@@ -42,15 +54,31 @@ eg:dataset-le3 a qb:DataSet;
    # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
     .
 
-eg:organization a org:Organization, foaf:Agent;
-    rdfs:label "Pemkot Surabaya" . 
+#eg:dataset-imigran a qb:DataSet;
+ #   dct:title       "Imigran di Surabaya";
+#    rdfs:label      "Imigran di Surabaya";
+#    rdfs:comment    "Imigran di Surabaya";
+#    dct:description "Imigran di Surabaya";
+#    dct:publisher   eg:organization ;
+ #   dct:issued      "2015-12-07"^^xsd:date;
+#    dct:subject
+#        sdmx-subject:2.3 ,      # regional and small area statistics
+#        sdmx-subject:1.1 ,      # Health
+#        ex-geo:surabaya;           # Wales
+ #   qb:structure eg:dsd-le3 ;  
+#    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
+   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+#    .
+
+#eg:organization a org:Organization, foaf:Agent;
+#    rdfs:label "Pemkot Surabaya" . 
 
 # -- Data structure definition ----------------------------
 
-eg:dsd-le3 a qb:DataStructureDefinition;
+eg:dsd-investasi a qb:DataStructureDefinition;
     qb:component 
     # The dimensions
-        [ qb:dimension eg:refTime],
+        [ qb:dimension eg:refPeriod],
         [ qb:dimension eg:refKecamatan],
         [ qb:dimension eg:jenisPermodalan],
         [ qb:dimension eg:sektor],
@@ -58,33 +86,27 @@ eg:dsd-le3 a qb:DataStructureDefinition;
         [ qb:dimension eg:refNegara];
         
     # The measure(s)
-    qb:component[ qb:measure eg:imigran],
-                [ qb:measure eg:investasiRupiah],
-                [ qb:measure eg:investasiDolar];
+    qb:component[qb:measure eg:investasiRupiah],
+                [qb:measure eg:investasiDolar];
     .
-    # The attributes
-    #qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
-    #             qb:componentRequired "true"^^xsd:boolean;
-    #              qb:componentAttachment qb:DataSet; ] ;
-    #
-    # slices
-
-    #qb:sliceKey eg:sliceByRegion ;
-    #.
     
-#eg:sliceByRegion a qb:SliceKey;
-   # rdfs:label "slice by region"@en;
-   # rdfs:comment "Slice by grouping regions together, fixing sex and time values"@en;
-   # qb:componentProperty eg:refPeriod, sdmx-dimension:sex ;
-   # .
+#eg:dsd-imigran a qb:DataStructureDefinition;
+ #   qb:component 
+    # The dimensions
+ #       [qb:dimension eg:refKecamatan],
+ #       [qb:dimension eg:refPeriod];
+        
+    # The measure(s)
+ #   qb:component[qb:measure eg:imigran];
+ #   .
 
 
 # -- Dimensions and measures  ----------------------------
 # -- Dimensions
 
-eg:refTime  a rdf:Property, qb:DimensionProperty;
+eg:refPeriod a rdf:Property, qb:DimensionProperty;
     rdfs:label "Tahunan";
-    rdfs:subPropertyOf sdmx-dimension:timePeriod;
+    rdfs:subPropertyOf sdmx-dimension:refPeriod;
     rdfs:range xsd:integer;
     qb:concept sdmx-concept:timePeriod ;
     .
@@ -92,7 +114,7 @@ eg:refTime  a rdf:Property, qb:DimensionProperty;
 eg:refKecamatan a rdf:Property, qb:DimensionProperty;
     rdfs:label "Kecamatan";
     rdfs:subPropertyOf sdmx-dimension:refArea;
-    rdfs:range ex-geo:Kecamatan;
+    rdfs:range dbpedia-id-ont:District;
     qb:concept sdmx-concept:refArea ;
     .
 
@@ -106,7 +128,7 @@ eg:refNegara a rdf:Property, qb:DimensionProperty;
 eg:refPerusahaan a rdf:Property, qb:DimensionProperty;
     rdfs:label "Perusahaan";
     rdfs:subPropertyOf sdmx-dimension:refArea;
-    rdfs:range ex-geo:Perusahaan;
+    rdfs:range dbpediaont:Company;
     qb:concept sdmx-concept:refArea ;
     .
 
@@ -130,25 +152,30 @@ eg:imigran  a rdf:Property, qb:MeasureProperty;
     rdfs:range xsd:integer ;
     .
 eg:investasiRupiah  a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Imigran";
+    rdfs:label "Investasi dalam Rupiah";
     rdfs:subPropertyOf sdmx-measure:obsValue;
     rdfs:range xsd:decimal ;
     .
 eg:investasiDolar  a rdf:Property, qb:MeasureProperty;
-    rdfs:label "Imigran";
+    rdfs:label "Investasi dalam Dolar";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+    .
+eg:luas  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Luas Kecamatan";
     rdfs:subPropertyOf sdmx-measure:obsValue;
     rdfs:range xsd:decimal ;
     .
 
 # -- Code lists -------------------------------------------
 eg:jenisPermodalanCodeList a skos:ConceptScheme, sdmx:CodeList;
-    rdfs:label "Suppliers"@en ;
+    rdfs:label "Jenis Permodalan";
     skos:hasTopConcept eg:PMA;
     skos:hasTopConcept eg:PMDN;
     .
 
 eg:sektorCodeList a skos:ConceptScheme, sdmx:CodeList;
-    rdfs:label "Suppliers"@en ;
+    rdfs:label "Sektor" ;
     skos:hasTopConcept eg:AngkutanAir;
     skos:hasTopConcept eg:IndustriBahanKimiadanBarangdariBahanKimia;
     skos:hasTopConcept eg:IndustriBarangGalianBukanLogam;
@@ -161,58 +188,1050 @@ eg:sektorCodeList a skos:ConceptScheme, sdmx:CodeList;
 
 # -- Concepts -----------------------------------------
 eg:PMA a skos:Concept;
-    skos:inScheme eg:jenisPermodalanCodeList
+    skos:inScheme eg:jenisPermodalanCodeList;
+    rdfs:label "PMA";
     .
 eg:PMDN a skos:Concept;
-    skos:inScheme eg:jenisPermodalanCodeList
+    skos:inScheme eg:jenisPermodalanCodeList;
+    rdfs:label "PMDN";
     .
 
 eg:AngkutanAir a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Angkutan Air";
     .
 eg:IndustriBahanKimiadanBarangdariBahanKimia a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Industri Bahan Kimia dan Barang dari Bahan Kimia";
     .
 eg:IndustriBarangGalianBukanLogam a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Industri Barang Galian Bukan Logam";
     .
 eg:IndustriBarangLogamkecualiMesindanPeralatannya a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Industri Barang Logam kecuali Mesin dan Peralatannya";
     .
 eg:IndustriFarmasiProdukObatdanJamu a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Industri Farmasi Produk Obat dan Jamu";
     .
 eg:IndustriFurnitur a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Industri Furnitur";
     .
 eg:IndustriKaretBarangdariKaretdanPlastik a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Industri Karet Barang dari Karet dan Plastik";
     .
 eg:TidakDidefinisikan a skos:Concept;
-    skos:inScheme eg:sektorCodeList
+    skos:inScheme eg:sektorCodeList;
+    rdfs:label "Tidak Didefinisikan";
     .
+
+# -- Instance ------------------------------------------
+    # -- Company ----
+ex-geo:SHAN_YI a dbpediaont:Company ;
+rdfs:label "SHAN YI" .
+
+ex-geo:PT_SURYA_PERTIWI_NUSANTARA a dbpediaont:Company ;
+rdfs:label "PT SURYA PERTIWI NUSANTARA" .
+
+ex-geo:PT_CIPTA_SAMUDERA_SHIPPING_LINE a dbpediaont:Company ;
+rdfs:label "PT CIPTA SAMUDERA SHIPPING LINE" .
+
+ex-geo:PT_JATIM_PERKASA_SALVAGE a dbpediaont:Company ;
+rdfs:label "PT JATIM PERKASA SALVAGE" .
+
+ex-geo:KWANG_CHENG_CHEMICAL_INDUSTRY a dbpediaont:Company ;
+rdfs:label "KWANG CHENG CHEMICAL INDUSTRY" .
+
+ex-geo:PT_BAYER_INDONESIA a dbpediaont:Company ;
+rdfs:label "PT BAYER INDONESIA" .
+
+ex-geo:PT_ARJUNA_UTAMA_KIMIA a dbpediaont:Company ;
+rdfs:label "PT ARJUNA UTAMA KIMIA" .
+
+ex-geo:PENTA_OCEAN a dbpediaont:Company ;
+rdfs:label "PENTA OCEAN" .
+
+ex-geo:ENVIRONEER a dbpediaont:Company ;
+rdfs:label "ENVIRONEER" .
+
+ex-geo:BASF_INDONESIA a dbpediaont:Company ;
+rdfs:label "BASF INDONESIA" .
+
+ex-geo:SYNCOATES_INDONESIA a dbpediaont:Company ;
+rdfs:label "SYNCOATES INDONESIA" .
+
+ex-geo:PT_INDO_PUPUK a dbpediaont:Company ;
+rdfs:label "PT INDO PUPUK" .
+
+ex-geo:S_TANK_INDONESIA a dbpediaont:Company ;
+rdfs:label "S TANK INDONESIA" .
+
+ex-geo:ARTHA_NUGRAHA a dbpediaont:Company ;
+rdfs:label "ARTHA NUGRAHA" .
+
+ex-geo:KUNCI_ANEKA_SAKTI a dbpediaont:Company ;
+rdfs:label "KUNCI ANEKA SAKTI" .
+
+ex-geo:PT_MITRA_NIAGA_ANDALAN a dbpediaont:Company ;
+rdfs:label "PT MITRA NIAGA ANDALAN" .
+
+ex-geo:ORIENTAL_AQUARIUM a dbpediaont:Company ;
+rdfs:label "ORIENTAL AQUARIUM" .
+
+ex-geo:LISA_CONCRETE_INDONESIA a dbpediaont:Company ;
+rdfs:label "LISA CONCRETE INDONESIA" .
+
+ex-geo:BUMI_ENERGINDO_SEJAHTERA a dbpediaont:Company ;
+rdfs:label "BUMI ENERGINDO SEJAHTERA" .
+
+
+ex-geo:SUN_LIK_INDONESIA_ENERGY_TENTATIVE a dbpediaont:Company ;
+rdfs:label "SUN LIK INDONESIA ENERGY TENTATIVE" .
+
+ex-geo:PT_KIRANA a dbpediaont:Company ;
+rdfs:label "PT KIRANA" .
+
+ex-geo:PT_BHIRAWA_STEEL a dbpediaont:Company ;
+rdfs:label "PT BHIRAWA STEEL" .
+
+ex-geo:NRZ_PRIMA_GASKET_D_H_PT_MCI_PRIMA_GASKET a dbpediaont:Company ;
+rdfs:label "NRZ PRIMA GASKET D H PT MCI PRIMA GASKET" .
+
+ex-geo:NAR_STAINLESS_STEEL_CENTER a dbpediaont:Company ;
+rdfs:label "NAR STAINLESS STEEL CENTER" .
+
+ex-geo:MULTI_SUKSES_PERSADA a dbpediaont:Company ;
+rdfs:label "MULTI SUKSES PERSADA" .
+
+
+ex-geo:LUMINEUX_INDUSTRIE a dbpediaont:Company ;
+rdfs:label "LUMINEUX INDUSTRIE" .
+
+ex-geo:PT_WAKAN_MEDICINDO a dbpediaont:Company ;
+rdfs:label "PT WAKAN MEDICINDO" .
+
+ex-geo:PT_DAEWOONG_INFION a dbpediaont:Company ;
+rdfs:label "PT DAEWOONG INFION" .
+
+ex-geo:PENIDA a dbpediaont:Company ;
+rdfs:label "PENIDA" .
+
+ex-geo:SULAWESI_AGUNG_JAYA a dbpediaont:Company ;
+rdfs:label "SULAWESI AGUNG JAYA" .
+
+ex-geo:PRIMAL_SURF_INTERNATIONAL a dbpediaont:Company ;
+rdfs:label "PRIMAL SURF INTERNATIONAL" .
+
+ex-geo:ALAM_JAYA_PRIMANUSA a dbpediaont:Company ;
+rdfs:label "ALAM JAYA PRIMANUSA" .
+
+ex-geo:PT_MALAPLAST_ARISU_INDONESIA a dbpediaont:Company ;
+rdfs:label "PT MALAPLAST ARISU INDONESIA" .
+
+ex-geo:ATLANTIC_ANUGRAH_METALINDO a dbpediaont:Company ;
+rdfs:label "ATLANTIC ANUGRAH METALINDO" .
+
+ex-geo:PT_HOLCO_INDO_JAYA a dbpediaont:Company ;
+rdfs:label "PT HOLCO INDO JAYA" .
+
+ex-geo:PT_ARISU_INDONESIA a dbpediaont:Company ;
+rdfs:label "PT ARISU INDONESIA" .
+
+ex-geo:PT_ASIA_PRAMULIA a dbpediaont:Company ;
+rdfs:label "PT ASIA PRAMULIA" .
+
+ex-geo:PT_SURYA_MULTI_INDOPACK a dbpediaont:Company ;
+rdfs:label "PT SURYA MULTI INDOPACK" .
+
+
+    # -- Negara -----
+ex-geo:GabunganNegara a ex-geo:Negara ;
+    rdfs:label "Gabungan Negara" .
+
+ex-geo:Indonesia a ex-geo:Negara ;
+    rdfs:label "Indonesia" .
+
+    # -- Kecamtan -----
+ex-geo:Tandes a dbpedia-id-ont:District ;
+    rdfs:label "Tandes" .
+
+ex-geo:Wiyung a dbpedia-id-ont:District ;
+    rdfs:label "Wiyung" .
+
+ex-geo:Mulyorejo a dbpedia-id-ont:District ;
+    rdfs:label "Mulyorejo" .
+
+ex-geo:Lakasantri a dbpedia-id-ont:District ;
+    rdfs:label "Lakasantri" .
+
+ex-geo:Pakal a dbpedia-id-ont:District ;
+    rdfs:label "Pakal" .
+
+ex-geo:Simokerto a dbpedia-id-ont:District ;
+    rdfs:label "Simokerto" .
+
+ex-geo:Sambikerep a dbpedia-id-ont:District ;
+    rdfs:label "Sambikerep" .
+
+ex-geo:Rungkut a dbpedia-id-ont:District ;
+    rdfs:label "Rungkut" .
+
+ex-geo:Sukolilo a dbpedia-id-ont:District ;
+    rdfs:label "Sukolilo" .
+
+ex-geo:Benowo a dbpedia-id-ont:District ;
+    rdfs:label "Benowo" .
+
+ex-geo:Bubutan a dbpedia-id-ont:District ;
+    rdfs:label "Bubutan" .
+
+ex-geo:Genteng a dbpedia-id-ont:District ;
+    rdfs:label "Genteng" .
+
+ex-geo:Jambangan a dbpedia-id-ont:District ;
+    rdfs:label "Jambangan" .
+
+ex-geo:Tegalsari a dbpedia-id-ont:District ;
+    rdfs:label "Tegalsari" .
+
+ex-geo:Asemrowo a dbpedia-id-ont:District ;
+    rdfs:label "Asemrowo" .
+
+ex-geo:TenggilisMejoyo a dbpedia-id-ont:District ;
+    rdfs:label "Tenggilis Mejoyo" .
+
+ex-geo:Gayungan a dbpedia-id-ont:District ;
+    rdfs:label "Gayungan" .
+
+ex-geo:Kenjeran a dbpedia-id-ont:District ;
+    rdfs:label "Kenjeran" .
+
+ex-geo:Wonocolo a dbpedia-id-ont:District ;
+    rdfs:label "Wonocolo" .
+
+ex-geo:PabeanCantikan a dbpedia-id-ont:District ;
+    rdfs:label "PabeanCantikan" .
+
+ex-geo:Sawahan a dbpedia-id-ont:District ;
+    rdfs:label "Sawahan" .
+
+ex-geo:Bulak a dbpedia-id-ont:District ;
+    rdfs:label "Bulak" .
+
+ex-geo:Gubeng a dbpedia-id-ont:District ;
+    rdfs:label "Gubeng" .
+
+ex-geo:Krembangan a dbpedia-id-ont:District ;
+    rdfs:label "Krembangan" .
+
+ex-geo:Wonokromo a dbpedia-id-ont:District ;
+    rdfs:label "Wonokromo" .
+
+ex-geo:Semampir a dbpedia-id-ont:District ;
+    rdfs:label "Semampir" .
+
+ex-geo:Tambaksari a dbpedia-id-ont:District ;
+    rdfs:label "Tambaksari" .
+
+ex-geo:KarangPilang a dbpedia-id-ont:District ;
+    rdfs:label "Karang Pilang" .
+
+ex-geo:Sukomanunggal a dbpedia-id-ont:District ;
+    rdfs:label "Sukomanunggal" .
+
+ex-geo:GunungAnyar a dbpedia-id-ont:District ;
+    rdfs:label "Gunung Anyar" .
+
+ex-geo:DukuhPakis a dbpedia-id-ont:District ;
+    rdfs:label "Dukuh Pakis" .
 
 # -- Observations -----------------------------------------
-
 eg:recordInvestasi1
-    a eg:recordInvestasi ; 
-    a qb:Observation ; 
-    qb:dataSet eg:dataset-le3 ;
-    eg:refTime 2009;
-    eg:refKecamatan ex-geo:Tandes;
-    eg:refNegara ex-geo:Indonesia;
-    eg:refPerusahaan ex-geo:SHANYI;
-    eg:jenisPermodalan eg:PMA;
-    eg:sektor eg:TidakDidefinisikan;
-    eg:investasiDolar 1000000;
-    eg:investasiRupiah 0;
-    .
-    
-eg:recordImigran2009 
-    a eg:recordImigran ;
-    a qb:Observation ;
-    qb:dataSet eg:dataset-le3;
-    eg:refTime 2009;
-    eg:imigran 1083;
-    .
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:SHAN_YI;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:TidakDidefinisikan;
+eg:investasiDolar 1000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi2
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:Genteng;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_SURYA_PERTIWI_NUSANTARA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:TidakDidefinisikan;
+eg:investasiDolar 0;
+eg:investasiRupiah 320000000000;
+.
+
+
+
+eg:recordInvestasi3
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:Krembangan;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:PT_CIPTA_SAMUDERA_SHIPPING_LINE;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:AngkutanAir;
+eg:investasiDolar 0;
+eg:investasiRupiah 178250000000;
+.
+
+
+
+eg:recordInvestasi4
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2014;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:refNegara ex-geo:China;
+eg:refPerusahaan ex-geo:PT_JATIM_PERKASA_SALVAGE;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:AngkutanAir;
+eg:investasiDolar 1047600;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi5
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:refNegara ex-geo:Taiwan;
+eg:refPerusahaan ex-geo:KWANG_CHENG_CHEMICAL_INDUSTRY;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 1000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi6
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2014;
+eg:refKecamatan ex-geo:Rungkut;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_BAYER_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 1000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi7
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2014;
+eg:refKecamatan ex-geo:Rungkut;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_BAYER_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 4298800;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi8
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_ARJUNA_UTAMA_KIMIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 11500000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi9
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:refNegara ex-geo:Singapura;
+eg:refPerusahaan ex-geo:PT_ARJUNA_UTAMA_KIMIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 13000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi10
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PENTA_OCEAN;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 2000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi11
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:ENVIRONEER;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 150;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi12
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:Jerman;
+eg:refPerusahaan ex-geo:BASF_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 0;
+eg:investasiRupiah 1220000;
+.
+
+
+
+eg:recordInvestasi13
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:refNegara ex-geo:Malaysia;
+eg:refPerusahaan ex-geo:SYNCOATES_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 1000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi14
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_INDO_PUPUK;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 5000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi15
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:KoreaSelatan;
+eg:refPerusahaan ex-geo:S_TANK_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 500;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi16
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:refNegara ex-geo:Taiwan;
+eg:refPerusahaan ex-geo:KWANG_CHENG_CHEMICAL_INDUSTRY;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 1000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi17
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:ARTHA_NUGRAHA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 0;
+eg:investasiRupiah 7150000000;
+.
+
+
+
+eg:recordInvestasi18
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:refNegara ex-geo:Kanada;
+eg:refPerusahaan ex-geo:KUNCI_ANEKA_SAKTI;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 700;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi19
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2014;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:PT_MITRA_NIAGA_ANDALAN;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 0;
+eg:investasiRupiah 12500000000;
+.
+
+
+
+eg:recordInvestasi20
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Rungkut;
+eg:refNegara ex-geo:Jepang;
+eg:refPerusahaan ex-geo:ORIENTAL_AQUARIUM;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 1980570;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi21
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:LISA_CONCRETE_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 0;
+eg:investasiRupiah 39723364;
+.
+
+
+
+eg:recordInvestasi22
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:refNegara ex-geo:Kanada;
+eg:refPerusahaan ex-geo:KUNCI_ANEKA_SAKTI;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 700;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi23
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Genteng;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:BUMI_ENERGINDO_SEJAHTERA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 0;
+eg:investasiRupiah 1000000000;
+.
+
+
+
+eg:recordInvestasi24
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:ARTHA_NUGRAHA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 0;
+eg:investasiRupiah 1825000000;
+.
+
+
+
+eg:recordInvestasi25
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:refNegara ex-geo:China;
+eg:refPerusahaan ex-geo:SUN_LIK_INDONESIA_ENERGY_TENTATIVE;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 4000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi26
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:ARTHA_NUGRAHA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangGalianBukanLogam;
+eg:investasiDolar 0;
+eg:investasiRupiah 7150000000;
+.
+
+
+
+eg:recordInvestasi27
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_KIRANA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 500;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi28
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_BHIRAWA_STEEL;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 0;
+eg:investasiRupiah 140000000000;
+.
+
+
+
+eg:recordInvestasi29
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_KIRANA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 500;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi30
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:NRZ_PRIMA_GASKET_D_H_PT_MCI_PRIMA_GASKET;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 2131350;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi31
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Bubutan;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:NAR_STAINLESS_STEEL_CENTER;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 0;
+eg:investasiRupiah 7248500000;
+.
+
+
+
+eg:recordInvestasi32
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:MULTI_SUKSES_PERSADA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 0;
+eg:investasiRupiah 36000000000;
+.
+
+
+
+eg:recordInvestasi33
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:NRZ_PRIMA_GASKET_D_H_PT_MCI_PRIMA_GASKET;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 2131352;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi34
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PENTA_OCEAN;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBahanKimiadanBarangdariBahanKimia;
+eg:investasiDolar 2000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi35
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Pakal;
+eg:refNegara ex-geo:Singapura;
+eg:refPerusahaan ex-geo:LUMINEUX_INDUSTRIE;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 2000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi36
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_WAKAN_MEDICINDO;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriFarmasiProdukObatdanJamu;
+eg:investasiDolar 1200000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi37
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:refNegara ex-geo:KoreaSelatan;
+eg:refPerusahaan ex-geo:PT_DAEWOONG_INFION;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriFarmasiProdukObatdanJamu;
+eg:investasiDolar 3636400;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi38
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:refNegara ex-geo:KoreaSelatan;
+eg:refPerusahaan ex-geo:PT_WAKAN_MEDICINDO;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriFarmasiProduObatdanJamu;
+eg:investasiDolar 1200000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi39
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PENIDA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriFurnitur;
+eg:investasiDolar 1000000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi40
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:SULAWESI_AGUNG_JAYA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriFurnitur;
+eg:investasiDolar 0;
+eg:investasiRupiah 3000000000;
+.
+
+
+
+eg:recordInvestasi41
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:refNegara ex-geo:SelandiaBaru;
+eg:refPerusahaan ex-geo:PRIMAL_SURF_INTERNATIONAL;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 500;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi42
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2009;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:ALAM_JAYA_PRIMANUSA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 5600000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi43
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_MALAPLAST_ARISU_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 1684152;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi44
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Tandes;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:ATLANTIC_ANUGRAH_METALINDO;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+eg:investasiDolar 0;
+eg:investasiRupiah 11718000000;
+.
+
+
+
+eg:recordInvestasi45
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2013;
+eg:refKecamatan ex-geo:Rungkut;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_HOLCO_INDO_JAYA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 1695060;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi46
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2010;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_ARISU_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 2710000;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi47
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2014;
+eg:refKecamatan ex-geo:Rungkut;
+eg:refNegara ex-geo:Indonesia;
+eg:refPerusahaan ex-geo:PT_ASIA_PRAMULIA;
+eg:jenisPermodalan eg:PMDN;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 0;
+eg:investasiRupiah 5500000000;
+.
+
+
+
+eg:recordInvestasi48
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2012;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_ARISU_INDONESIA;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 9692344;
+eg:investasiRupiah 0;
+.
+
+
+
+eg:recordInvestasi49
+a eg:recordInvestasi ;
+a qb:Observation ;
+qb:dataSet eg:dataset-investasi ;
+eg:refPeriod 2011;
+eg:refKecamatan ex-geo:Rungkut;
+eg:refNegara ex-geo:GabunganNegara;
+eg:refPerusahaan ex-geo:PT_SURYA_MULTI_INDOPACK;
+eg:jenisPermodalan eg:PMA;
+eg:sektor eg:IndustriKaretBarangdariKaretdanPlastik;
+eg:investasiDolar 27758000;
+eg:investasiRupiah 0;
+.
+
+
+
 

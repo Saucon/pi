@@ -1,12 +1,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
 @prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
 @prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
 @prefix dbpedia-id-prop: <http://id.dbpedia.org/property/> .
 @prefix dbpediares: <http://dbpedia.org/resource/> .
 @prefix dbpediaont: <http://dbpedia.org/ontology/> .
 @prefix dbpediaprop: <http://dbpedia.org/property/> .
+
 @prefix ex: <http://example.com/> .
 
 dbpedia-id-ont:District a rdfs:Class .
@@ -22,7 +24,6 @@ ex:sektor a rdfs:Class .
 dbpedia-id-prop:luas a rdf:Property .
 dbpedia-id-prop:luas rdfs:domain dbpedia-id-ont:District .
 dbpedia-id-prop:luas rdfs:range xsd:float .
-
 
 
 ex:memilikiRecordImmigrant a rdf:Property .

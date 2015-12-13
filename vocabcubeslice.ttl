@@ -1,0 +1,262 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+
+
+@prefix sdmx:        <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+
+@prefix ex-geo:   <http://example.org/geo#> .
+@prefix eg:       <http://example.org/ns#> .
+
+# -- Vocab -----------------------------------------------
+ex-geo:Kecamatan a rdfs:Class .
+ex-geo:Negara a rdfs:Class .
+ex-geo:Perusahaan a rdfs:Class .
+
+eg:luas a rdf:Property .
+eg:luas rdfs:domain ex-geo:Kecamatan .
+eg:luas rdfs:range xsd:float .
+
+# -- Data Set --------------------------------------------
+
+eg:dataset-le3 a qb:DataSet;
+    dct:title       "Investasi dan Imigran per Kecamatan";
+    rdfs:label      "Investasi dan Imigran per Kecamatan";
+    rdfs:comment    "Investasi dan Imigran per Kecamatan kota Surabaya";
+    dct:description "Investasi dan Imigran per Kecamatan kota Surabaya";
+    dct:publisher   eg:organization ;
+    dct:issued      "2015-12-07"^^xsd:date;
+    dct:subject
+        sdmx-subject:2.3 ,      # regional and small area statistics
+        sdmx-subject:1.1 ,      # Health
+        ex-geo:surabaya;           # Wales
+    qb:structure eg:dsd-le3 ;  
+    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
+
+   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+    .
+
+eg:organization a org:Organization, foaf:Agent;
+    rdfs:label "Pemkot Surabaya" . 
+
+# -- Data structure definition ----------------------------
+
+eg:dsd-le3 a qb:DataStructureDefinition;
+    qb:component 
+    # The dimensions
+        [ qb:dimension eg:refTime; qb:componentAttachment qb:slice],
+        [ qb:dimension eg:refKecamatan; qb:componentAttachment qb:slice],
+        [ qb:dimension eg:jenisPermodalan];
+        
+    # The measure(s)
+    qb:component[ qb:measure eg:investasiRupiah];
+
+    qb:sliceKey eg:investasi_jenispermodalan;
+    .
+
+eg:investasi_jenispermodalan a qb:SliceKey;
+    qb:componentProperty eg:refTime , eg:refKecamatan .
+    # The attributes
+    #qb:component [ qb:attribute sdmx-attribute:unitMeasure; 
+    #             qb:componentRequired "true"^^xsd:boolean;
+    #              qb:componentAttachment qb:DataSet; ] ;
+    #
+    # slices
+
+    #qb:sliceKey eg:sliceByRegion ;
+    #.
+    
+#eg:sliceByRegion a qb:SliceKey;
+   # rdfs:label "slice by region"@en;
+   # rdfs:comment "Slice by grouping regions together, fixing sex and time values"@en;
+   # qb:componentProperty eg:refPeriod, sdmx-dimension:sex ;
+   # .
+
+
+# -- Dimensions and measures  ----------------------------
+# -- Dimensions
+
+eg:refTime  a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Tahunan";
+    rdfs:subPropertyOf sdmx-dimension:timePeriod;
+    rdfs:range xsd:integer;
+    qb:concept sdmx-concept:timePeriod ;
+    .
+
+eg:refKecamatan a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Kecamatan";
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range ex-geo:Kecamatan;
+    qb:concept sdmx-concept:refArea ;
+    .
+
+eg:refNegara a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Negara";
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range ex-geo:Negara;
+    qb:concept sdmx-concept:refArea ;
+    .
+
+eg:refPerusahaan a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Perusahaan";
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range ex-geo:Perusahaan;
+    qb:concept sdmx-concept:refArea ;
+    .
+
+eg:jenisPermodalan a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Jenis Permodalan";
+    rdfs:range skos:Concept ;
+    qb:codeList eg:jenisPermodalanCodeList ;
+    .
+
+eg:sektor a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Sektor Permodalan";
+    rdfs:range skos:Concept ;
+    qb:codeList eg:sektorCodeList ;
+    .
+
+
+# -- Measure
+eg:imigran  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Imigran";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:integer ;
+    .
+eg:investasiRupiah  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Imigran";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+    .
+eg:investasiDolar  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Imigran";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+    .
+
+# -- Code lists -------------------------------------------
+eg:jenisPermodalanCodeList a skos:ConceptScheme, sdmx:CodeList;
+    rdfs:label "Suppliers"@en ;
+    skos:hasTopConcept eg:PMA;
+    skos:hasTopConcept eg:PMDN;
+    .
+
+eg:sektorCodeList a skos:ConceptScheme, sdmx:CodeList;
+    rdfs:label "Suppliers"@en ;
+    skos:hasTopConcept eg:AngkutanAir;
+    skos:hasTopConcept eg:IndustriBahanKimiadanBarangdariBahanKimia;
+    skos:hasTopConcept eg:IndustriBarangGalianBukanLogam;
+    skos:hasTopConcept eg:IndustriBarangLogamkecualiMesindanPeralatannya;
+    skos:hasTopConcept eg:IndustriFarmasiProdukObatdanJamu;
+    skos:hasTopConcept eg:IndustriFurnitur;
+    skos:hasTopConcept eg:IndustriKaretBarangdariKaretdanPlastik;
+    skos:hasTopConcept eg:TidakDidefinisikan;
+    .
+
+# -- Concepts -----------------------------------------
+eg:PMA a skos:Concept;
+    skos:inScheme eg:jenisPermodalanCodeList
+    .
+eg:PMDN a skos:Concept;
+    skos:inScheme eg:jenisPermodalanCodeList
+    .
+
+eg:AngkutanAir a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:IndustriBahanKimiadanBarangdariBahanKimia a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:IndustriBarangGalianBukanLogam a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:IndustriBarangLogamkecualiMesindanPeralatannya a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:IndustriFarmasiProdukObatdanJamu a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:IndustriFurnitur a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:IndustriKaretBarangdariKaretdanPlastik a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+eg:TidakDidefinisikan a skos:Concept;
+    skos:inScheme eg:sektorCodeList
+    .
+
+# -- Instance ------------------------------------------
+ex-geo:Tandes a ex-geo:Kecamatan;
+rdfs:label "Tandes";
+eg:luas 11.07 .
+
+# -- Observations -----------------------------------------
+
+
+eg:investasi_jenispermodalan_1 a qb:slice;
+    qb:sliceStructure eg:investasi_jenispermodalan;
+    eg:refTime 2009;
+    eg:refKecamatan ex-geo:Tandes;
+    qb:observation eg:Tandes2009PMA , eg:Tandes2009PMDN .
+    
+eg:Tandes2009PMA a qb:Observation;
+    qb:dataSet eg:dataset-le3;
+    eg:jenisPermodalan eg:PMA;
+    eg:investasiRupiah 1220000 .
+
+eg:Tandes2009PMDN a qb:Observation;
+    qb:dataSet eg:dataset-le3;
+    eg:jenisPermodalan eg:PMDN;
+    eg:investasiRupiah 0 .
+
+eg:investasi_jenispermodalan_2 a qb:slice;
+    qb:sliceStructure eg:investasi_jenispermodalan;
+    eg:refTime 2010;
+    eg:refKecamatan ex-geo:Tandes;
+    qb:observation eg:Tandes2010PMA , eg:Tandes2010PMDN .
+    
+eg:Tandes2010PMA a qb:Observation;
+    qb:dataSet eg:dataset-le3;
+    eg:jenisPermodalan eg:PMA;
+    eg:investasiRupiah 140000000000.
+
+eg:Tandes2010PMDN a qb:Observation;
+    qb:dataSet eg:dataset-le3;
+    eg:jenisPermodalan eg:PMDN;
+    eg:investasiRupiah 0.
+
+eg:investasi_jenispermodalan_3 a qb:slice;
+    qb:sliceStructure eg:investasi_jenispermodalan;
+    eg:refTime 2011;
+    eg:refKecamatan ex-geo:Tandes;
+    qb:observation eg:Tandes2011PMA , eg:Tandes2011PMDN .
+    
+eg:Tandes2011PMA a qb:Observation;
+    qb:dataSet eg:dataset-le3;
+    eg:jenisPermodalan eg:PMA;
+    eg:investasiRupiah 0.
+
+eg:Tandes2010PMDN a qb:Observation;
+    qb:dataSet eg:dataset-le3;
+    eg:jenisPermodalan eg:PMDN;
+    eg:investasiRupiah 11718000000.
+
+
+
+
