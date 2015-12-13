@@ -105,17 +105,2383 @@ a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 2009 ;
+eg:refPeriod 20081 ;
 eg:imigran 1083;
 eg:luas 11.07;
 .
+
 
 eg:recordImigran1_2
 a eg:recordImigran ;
 a qb:Observation ;
 qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
-eg:refPeriod 2010 ;
+eg:refPeriod 20082 ;
 eg:imigran 1993;
 eg:luas 11.07;
+.
+
+
+eg:recordImigran1_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 20083 ;
+eg:imigran 1092;
+eg:luas 11.07;
+.
+
+
+eg:recordImigran1_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 20084 ;
+eg:imigran 3043;
+eg:luas 11.07;
+.
+
+
+eg:recordImigran1_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 20085 ;
+eg:imigran 1528;
+eg:luas 11.07;
+.
+
+
+eg:recordImigran1_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 20086 ;
+eg:imigran 982;
+eg:luas 11.07;
+.
+
+
+eg:recordImigran1_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tandes ;
+eg:refPeriod 20087 ;
+eg:imigran 11.07;
+eg:luas 11.07;
+.
+
+
+eg:recordImigran2_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20081 ;
+eg:imigran 1541;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran2_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20082 ;
+eg:imigran 1320;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran2_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20083 ;
+eg:imigran 896;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran2_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20084 ;
+eg:imigran 2348;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran2_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20085 ;
+eg:imigran 1642;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran2_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20086 ;
+eg:imigran 2125;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran2_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wiyung ;
+eg:refPeriod 20087 ;
+eg:imigran 12.46;
+eg:luas 12.46;
+.
+
+
+eg:recordImigran3_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20081 ;
+eg:imigran 1870;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran3_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20082 ;
+eg:imigran 1652;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran3_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20083 ;
+eg:imigran 1181;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran3_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20084 ;
+eg:imigran 2406;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran3_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20085 ;
+eg:imigran 1976;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran3_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20086 ;
+eg:imigran 2371;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran3_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Mulyorejo ;
+eg:refPeriod 20087 ;
+eg:imigran 14.21;
+eg:luas 14.21;
+.
+
+
+eg:recordImigran4_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20081 ;
+eg:imigran 1287;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran4_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20082 ;
+eg:imigran 2191;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran4_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20083 ;
+eg:imigran 752;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran4_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20084 ;
+eg:imigran 3167;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran4_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20085 ;
+eg:imigran 1370;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran4_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20086 ;
+eg:imigran 1635;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran4_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Lakarsantri ;
+eg:refPeriod 20087 ;
+eg:imigran 16.05;
+eg:luas 16.05;
+.
+
+
+eg:recordImigran5_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20081 ;
+eg:imigran 1474;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran5_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20082 ;
+eg:imigran 1518;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran5_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20083 ;
+eg:imigran 984;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran5_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20084 ;
+eg:imigran 3142;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran5_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20085 ;
+eg:imigran 2146;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran5_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20086 ;
+eg:imigran 2310;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran5_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Pakal ;
+eg:refPeriod 20087 ;
+eg:imigran 19.01;
+eg:luas 19.01;
+.
+
+
+eg:recordImigran6_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20081 ;
+eg:imigran 701;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran6_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20082 ;
+eg:imigran 1634;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran6_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20083 ;
+eg:imigran 1038;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran6_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20084 ;
+eg:imigran 2862;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran6_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20085 ;
+eg:imigran 1091;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran6_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20086 ;
+eg:imigran 3981;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran6_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Simokerto ;
+eg:refPeriod 20087 ;
+eg:imigran 2.59;
+eg:luas 2.59;
+.
+
+
+eg:recordImigran7_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20081 ;
+eg:imigran 1345;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran7_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20082 ;
+eg:imigran 1168;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran7_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20083 ;
+eg:imigran 700;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran7_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20084 ;
+eg:imigran 2038;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran7_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20085 ;
+eg:imigran 1530;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran7_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20086 ;
+eg:imigran 2125;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran7_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sambikerep ;
+eg:refPeriod 20087 ;
+eg:imigran 20.42;
+eg:luas 20.42;
+.
+
+
+eg:recordImigran8_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20081 ;
+eg:imigran 2611;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran8_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20082 ;
+eg:imigran 2974;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran8_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20083 ;
+eg:imigran 2362;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran8_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20084 ;
+eg:imigran 6362;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran8_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20085 ;
+eg:imigran 3989;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran8_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20086 ;
+eg:imigran 3001;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran8_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Rungkut ;
+eg:refPeriod 20087 ;
+eg:imigran 21.08;
+eg:luas 21.08;
+.
+
+
+eg:recordImigran9_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20081 ;
+eg:imigran 2267;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran9_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20082 ;
+eg:imigran 2279;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran9_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20083 ;
+eg:imigran 2041;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran9_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20084 ;
+eg:imigran 4219;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran9_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20085 ;
+eg:imigran 2663;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran9_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20086 ;
+eg:imigran 3420;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran9_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukolilo ;
+eg:refPeriod 20087 ;
+eg:imigran 23.69;
+eg:luas 23.69;
+.
+
+
+eg:recordImigran10_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20081 ;
+eg:imigran 1568;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran10_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20082 ;
+eg:imigran 1841;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran10_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20083 ;
+eg:imigran 1060;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran10_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20084 ;
+eg:imigran 4504;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran10_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20085 ;
+eg:imigran 2396;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran10_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20086 ;
+eg:imigran 3071;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran10_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Benowo ;
+eg:refPeriod 20087 ;
+eg:imigran 26.78;
+eg:luas 26.78;
+.
+
+
+eg:recordImigran11_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20081 ;
+eg:imigran 1250;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran11_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20082 ;
+eg:imigran 2539;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran11_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20083 ;
+eg:imigran 1240;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran11_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20084 ;
+eg:imigran 3995;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran11_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20085 ;
+eg:imigran 1726;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran11_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20086 ;
+eg:imigran 1,318;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran11_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bubutan ;
+eg:refPeriod 20087 ;
+eg:imigran 3.86;
+eg:luas 3.86;
+.
+
+
+eg:recordImigran12_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20081 ;
+eg:imigran 676;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran12_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20082 ;
+eg:imigran 1252;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran12_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20083 ;
+eg:imigran 653;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran12_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20084 ;
+eg:imigran 1894;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran12_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20085 ;
+eg:imigran 73;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran12_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20086 ;
+eg:imigran 503;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran12_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Genteng ;
+eg:refPeriod 20087 ;
+eg:imigran 4.04;
+eg:luas 4.04;
+.
+
+
+eg:recordImigran13_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20081 ;
+eg:imigran 1447;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran13_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20082 ;
+eg:imigran 1196;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran13_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20083 ;
+eg:imigran 883;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran13_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20084 ;
+eg:imigran 2153;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran13_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20085 ;
+eg:imigran 1560;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran13_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20086 ;
+eg:imigran 1795;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran13_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Jambangan ;
+eg:refPeriod 20087 ;
+eg:imigran 4.19;
+eg:luas 4.19;
+.
+
+
+eg:recordImigran14_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20081 ;
+eg:imigran 895;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran14_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20082 ;
+eg:imigran 1817;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran14_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20083 ;
+eg:imigran 1063;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran14_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20084 ;
+eg:imigran 3394;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran14_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20085 ;
+eg:imigran 1852;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran14_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20086 ;
+eg:imigran 278;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran14_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tegalsari ;
+eg:refPeriod 20087 ;
+eg:imigran 4,29;
+eg:luas 4,29;
+.
+
+
+eg:recordImigran15_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20081 ;
+eg:imigran 744;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran15_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20082 ;
+eg:imigran 1228;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran15_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20083 ;
+eg:imigran 502;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran15_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20084 ;
+eg:imigran 2628;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran15_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20085 ;
+eg:imigran 737;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran15_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20086 ;
+eg:imigran 2545;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran15_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Asemrowo ;
+eg:refPeriod 20087 ;
+eg:imigran 5.44;
+eg:luas 5.44;
+.
+
+
+eg:recordImigran16_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20081 ;
+eg:imigran 1098;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran16_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20082 ;
+eg:imigran 1042;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran16_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20083 ;
+eg:imigran 1113;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran16_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20084 ;
+eg:imigran 2693;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran16_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20085 ;
+eg:imigran 1519;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran16_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20086 ;
+eg:imigran 1872;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran16_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:TenggilisMejoyo ;
+eg:refPeriod 20087 ;
+eg:imigran 5.52;
+eg:luas 5.52;
+.
+
+
+eg:recordImigran17_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20081 ;
+eg:imigran 1307;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran17_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20082 ;
+eg:imigran 1006;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran17_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20083 ;
+eg:imigran 800;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran17_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20084 ;
+eg:imigran 1723;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran17_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20085 ;
+eg:imigran 1271;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran17_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20086 ;
+eg:imigran 1541;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran17_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gayungan ;
+eg:refPeriod 20087 ;
+eg:imigran 6.07;
+eg:luas 6.07;
+.
+
+
+eg:recordImigran18_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20081 ;
+eg:imigran 3899;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran18_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20082 ;
+eg:imigran 4463;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran18_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20083 ;
+eg:imigran 3192;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran18_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20084 ;
+eg:imigran 8124;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran18_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20085 ;
+eg:imigran 5351;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran18_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20086 ;
+eg:imigran 5192;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran18_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Kenjeran ;
+eg:refPeriod 20087 ;
+eg:imigran 6.78;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20081 ;
+eg:imigran 1411;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20082 ;
+eg:imigran 2097;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20083 ;
+eg:imigran 1027;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20084 ;
+eg:imigran 4295;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20085 ;
+eg:imigran 1986;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20086 ;
+eg:imigran 2630;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran19_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonocolo ;
+eg:refPeriod 20087 ;
+eg:imigran 6.78;
+eg:luas 6.78;
+.
+
+
+eg:recordImigran20_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20081 ;
+eg:imigran 860;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran20_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20082 ;
+eg:imigran 939;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran20_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20083 ;
+eg:imigran 1022;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran20_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20084 ;
+eg:imigran 2116;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran20_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20085 ;
+eg:imigran 1122;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran20_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20086 ;
+eg:imigran 2346;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran20_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:PabeanCantikan ;
+eg:refPeriod 20087 ;
+eg:imigran 6.8;
+eg:luas 6.8;
+.
+
+
+eg:recordImigran21_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20081 ;
+eg:imigran 3126;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran21_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20082 ;
+eg:imigran 2039;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran21_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20083 ;
+eg:imigran 2454;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran21_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20084 ;
+eg:imigran 5193;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran21_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20085 ;
+eg:imigran 3254;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran21_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20086 ;
+eg:imigran 3726;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran21_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sawahan ;
+eg:refPeriod 20087 ;
+eg:imigran 6.93;
+eg:luas 6.93;
+.
+
+
+eg:recordImigran22_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20081 ;
+eg:imigran 943;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran22_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20082 ;
+eg:imigran 1097;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran22_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20083 ;
+eg:imigran 727;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran22_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20084 ;
+eg:imigran 1,307;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran22_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20085 ;
+eg:imigran 1125;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran22_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20086 ;
+eg:imigran 1805;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran22_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Bulak ;
+eg:refPeriod 20087 ;
+eg:imigran 7.64;
+eg:luas 7.64;
+.
+
+
+eg:recordImigran23_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20081 ;
+eg:imigran 2054;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran23_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20082 ;
+eg:imigran 2342;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran23_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20083 ;
+eg:imigran 1643;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran23_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20084 ;
+eg:imigran 3990;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran23_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20085 ;
+eg:imigran 2106;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran23_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20086 ;
+eg:imigran 1152;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran23_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Gubeng ;
+eg:refPeriod 20087 ;
+eg:imigran 7.99;
+eg:luas 7.99;
+.
+
+
+eg:recordImigran24_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20081 ;
+eg:imigran 2612;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran24_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20082 ;
+eg:imigran 2171;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran24_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20083 ;
+eg:imigran 1808;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran24_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20084 ;
+eg:imigran 4530;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran24_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20085 ;
+eg:imigran 3104;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran24_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20086 ;
+eg:imigran 2449;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran24_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Krembangan ;
+eg:refPeriod 20087 ;
+eg:imigran 8.34;
+eg:luas 8.34;
+.
+
+
+eg:recordImigran25_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20081 ;
+eg:imigran 704;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran25_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20082 ;
+eg:imigran 4223;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran25_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20083 ;
+eg:imigran 1165;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran25_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20084 ;
+eg:imigran 5408;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran25_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20085 ;
+eg:imigran 2703;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran25_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20086 ;
+eg:imigran 1471;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran25_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Wonokromo ;
+eg:refPeriod 20087 ;
+eg:imigran 8.47;
+eg:luas 8.47;
+.
+
+
+eg:recordImigran26_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20081 ;
+eg:imigran 3002;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran26_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20082 ;
+eg:imigran 3642;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran26_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20083 ;
+eg:imigran 1614;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran26_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20084 ;
+eg:imigran 5879;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran26_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20085 ;
+eg:imigran 3326;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran26_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20086 ;
+eg:imigran 3430;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran26_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Semampir ;
+eg:refPeriod 20087 ;
+eg:imigran 8.76;
+eg:luas 8.76;
+.
+
+
+eg:recordImigran27_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20081 ;
+eg:imigran 3465;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran27_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20082 ;
+eg:imigran 4096;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran27_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20083 ;
+eg:imigran 3441;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran27_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20084 ;
+eg:imigran 6625;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran27_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20085 ;
+eg:imigran 4478;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran27_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20086 ;
+eg:imigran 2612;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran27_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Tambaksari ;
+eg:refPeriod 20087 ;
+eg:imigran 8.99;
+eg:luas 8.99;
+.
+
+
+eg:recordImigran28_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20081 ;
+eg:imigran 883;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran28_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20082 ;
+eg:imigran 2241;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran28_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20083 ;
+eg:imigran 1075;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran28_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20084 ;
+eg:imigran 3622;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran28_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20085 ;
+eg:imigran 1642;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran28_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20086 ;
+eg:imigran 1102;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran28_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:KarangPilang ;
+eg:refPeriod 20087 ;
+eg:imigran 9.23;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20081 ;
+eg:imigran 2080;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20082 ;
+eg:imigran 1446;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20083 ;
+eg:imigran 2090;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20084 ;
+eg:imigran 3468;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20085 ;
+eg:imigran 2566;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20086 ;
+eg:imigran 1150;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran29_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:Sukomanunggal ;
+eg:refPeriod 20087 ;
+eg:imigran 9.23;
+eg:luas 9.23;
+.
+
+
+eg:recordImigran30_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20081 ;
+eg:imigran 1487;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran30_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20082 ;
+eg:imigran 1328;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran30_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20083 ;
+eg:imigran 1055;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran30_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20084 ;
+eg:imigran 2768;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran30_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20085 ;
+eg:imigran 2055;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran30_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20086 ;
+eg:imigran 1856;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran30_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:GunungAnyar ;
+eg:refPeriod 20087 ;
+eg:imigran 9.71;
+eg:luas 9.71;
+.
+
+
+eg:recordImigran31_1
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20081 ;
+eg:imigran 1305;
+eg:luas 9.94;
+.
+
+
+eg:recordImigran31_2
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20082 ;
+eg:imigran 875;
+eg:luas 9.94;
+.
+
+
+eg:recordImigran31_3
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20083 ;
+eg:imigran 768;
+eg:luas 9.94;
+.
+
+
+eg:recordImigran31_4
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20084 ;
+eg:imigran 1698;
+eg:luas 9.94;
+.
+
+
+eg:recordImigran31_5
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20085 ;
+eg:imigran 1161;
+eg:luas 9.94;
+.
+
+
+eg:recordImigran31_6
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20086 ;
+eg:imigran 1622;
+eg:luas 9.94;
+.
+
+
+eg:recordImigran31_7
+a eg:recordImigran ;
+a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
+eg:refKecamatan ex-geo:DukuhPakis ;
+eg:refPeriod 20087 ;
+eg:imigran 9.94;
+eg:luas 9.94;
 .
