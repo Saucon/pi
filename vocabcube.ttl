@@ -45,10 +45,10 @@ eg:dataset-investasi a qb:DataSet;
     dct:description "Investasi di Surabaya";
     dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
-    dct:subject
-        sdmx-subject:2.3 ,      # regional and small area statistics
-        sdmx-subject:1.1 ,      # Health
-        ex-geo:surabaya;           # Wales
+    #dct:subject
+    #    sdmx-subject:2.3 ,      # regional and small area statistics
+    #    sdmx-subject:1.1 ,      # Health
+     #   ex-geo:surabaya;           # Wales
     qb:structure eg:dsd-investasi ;  
    # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
     .
