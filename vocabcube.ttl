@@ -1228,8 +1228,9 @@ eg:investasiRupiah 0;
 eg:recordImigran1
 a eg:recordImigran ;
 a qb:Observation ;
+qb:dataSet eg:dataset-imigran ;
 eg:refKecamatan ex-geo:Tandes ;
 eg:refPeriod 2009 ;
 eg:imigran 1083;
-
+.
 
