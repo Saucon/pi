@@ -1231,5 +1231,5 @@ a qb:Observation ;
 eg:refKecamatan ex-geo:Tandes ;
 eg:refPeriod 2009 ;
 eg:imigran 1083;
-
+.
 
