@@ -1,0 +1,219 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix void:     <http://rdfs.org/ns/void#> .
+@prefix dct:      <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix org:      <http://www.w3.org/ns/org#> .
+
+@prefix qb:       <http://purl.org/linked-data/cube#> .
+
+
+@prefix sdmx:        <http://purl.org/linked-data/sdmx#> .
+@prefix sdmx-concept:    <http://purl.org/linked-data/sdmx/2009/concept#> .
+@prefix sdmx-dimension:  <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix sdmx-attribute:  <http://purl.org/linked-data/sdmx/2009/attribute#> .
+@prefix sdmx-measure:    <http://purl.org/linked-data/sdmx/2009/measure#> .
+@prefix sdmx-metadata:   <http://purl.org/linked-data/sdmx/2009/metadata#> .
+@prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
+@prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
+
+@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+
+@prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
+@prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
+#@prefix dbpedia-id-prop: <http://id.dbpedia.org/property/> .
+@prefix dbpediares: <http://dbpedia.org/resource/> .
+@prefix dbpediaont: <http://dbpedia.org/ontology/> .
+#@prefix dbpediaprop: <http://dbpedia.org/property/> .
+
+# -- Vocab -----------------------------------------------
+ex-geo:Negara a rdfs:Class .
+ex-geo:Perusahaan a rdfs:Class .
+
+eg:recordInvestasi a rdfs:Class .
+# -- Data Set --------------------------------------------
+
+eg:dataset-investasi a qb:DataSet;
+    dct:title       "Investasi di Surabaya";
+    rdfs:label      "Investasi di Surabaya";
+    rdfs:comment    "Investasi di Surabaya";
+    dct:description "Investasi di Surabaya";
+    dct:issued      "2015-12-07"^^xsd:date;
+    qb:structure eg:dsd-investasi ;  
+    .
+
+# -- Data structure definition ----------------------------
+eg:dsd-investasi a qb:DataStructureDefinition;
+    qb:component 
+    # The dimensions
+        
+        [ qb:dimension eg:refKecamatan ; qb:order 1],
+        [ qb:dimension eg:jenisPermodalan; qb:order 2; qb:componentAttachment qb:Slice],
+        
+    # The measure(s)
+    qb:component[qb:measure eg:investasiRupiah],
+                [qb:measure eg:investasiDolar];
+    
+    qb:component [qb:componentRequired "true"^^xsd:boolean;
+                qb:componentAttachment qb:DataSet;];
+
+    qb:sliceKey eg:sliceByDistrict ;
+    .
+    
+# -- Slice Key definition ----------------------------
+eg:sliceByDistrict a qb:SliceKey;
+    rdfs:label "Slice berdasarkan Kecamatan";
+    qb:componentProperty eg:refPeriod; 
+.
+
+# -- Dimensions and measures  ----------------------------
+# -- Dimensions
+
+eg:refKecamatan a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Kecamatan";
+    rdfs:subPropertyOf sdmx-dimension:refArea;
+    rdfs:range dbpedia-id-ont:District;
+    qb:concept sdmx-concept:refArea ;
+    .
+
+eg:jenisPermodalan a rdf:Property, qb:DimensionProperty;
+    rdfs:label "Jenis Permodalan";
+    rdfs:range skos:Concept ;
+    qb:codeList eg:jenisPermodalanCodeList ;
+    .
+
+
+
+
+# -- Measure
+eg:investasiRupiah  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Investasi dalam Rupiah";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+    .
+eg:investasiDolar  a rdf:Property, qb:MeasureProperty;
+    rdfs:label "Investasi dalam Dolar";
+    rdfs:subPropertyOf sdmx-measure:obsValue;
+    rdfs:range xsd:decimal ;
+    .
+
+# -- Code lists -------------------------------------------
+eg:jenisPermodalanCodeList a skos:ConceptScheme, sdmx:CodeList;
+    rdfs:label "Jenis Permodalan";
+    skos:hasTopConcept eg:PMA;
+    skos:hasTopConcept eg:PMDN;
+    .
+
+
+
+# -- Concepts -----------------------------------------
+eg:PMA a skos:Concept;
+    skos:inScheme eg:jenisPermodalanCodeList;
+    rdfs:label "PMA";
+    .
+eg:PMDN a skos:Concept;
+    skos:inScheme eg:jenisPermodalanCodeList;
+    rdfs:label "PMDN";
+    .
+
+# -- Instance ------------------------------------------
+    # -- Kecamtan -----
+ex-geo:Tandes a dbpedia-id-ont:District ;
+    rdfs:label "Tandes" .
+
+ex-geo:Wiyung a dbpedia-id-ont:District ;
+    rdfs:label "Wiyung" .
+
+ex-geo:Mulyorejo a dbpedia-id-ont:District ;
+    rdfs:label "Mulyorejo" .
+
+ex-geo:Lakasantri a dbpedia-id-ont:District ;
+    rdfs:label "Lakasantri" .
+
+ex-geo:Pakal a dbpedia-id-ont:District ;
+    rdfs:label "Pakal" .
+
+ex-geo:Simokerto a dbpedia-id-ont:District ;
+    rdfs:label "Simokerto" .
+
+ex-geo:Sambikerep a dbpedia-id-ont:District ;
+    rdfs:label "Sambikerep" .
+
+ex-geo:Rungkut a dbpedia-id-ont:District ;
+    rdfs:label "Rungkut" .
+
+ex-geo:Sukolilo a dbpedia-id-ont:District ;
+    rdfs:label "Sukolilo" .
+
+ex-geo:Benowo a dbpedia-id-ont:District ;
+    rdfs:label "Benowo" .
+
+ex-geo:Bubutan a dbpedia-id-ont:District ;
+    rdfs:label "Bubutan" .
+
+ex-geo:Genteng a dbpedia-id-ont:District ;
+    rdfs:label "Genteng" .
+
+ex-geo:Jambangan a dbpedia-id-ont:District ;
+    rdfs:label "Jambangan" .
+
+ex-geo:Tegalsari a dbpedia-id-ont:District ;
+    rdfs:label "Tegalsari" .
+
+ex-geo:Asemrowo a dbpedia-id-ont:District ;
+    rdfs:label "Asemrowo" .
+
+ex-geo:TenggilisMejoyo a dbpedia-id-ont:District ;
+    rdfs:label "Tenggilis Mejoyo" .
+
+ex-geo:Gayungan a dbpedia-id-ont:District ;
+    rdfs:label "Gayungan" .
+
+ex-geo:Kenjeran a dbpedia-id-ont:District ;
+    rdfs:label "Kenjeran" .
+
+ex-geo:Wonocolo a dbpedia-id-ont:District ;
+    rdfs:label "Wonocolo" .
+
+ex-geo:PabeanCantikan a dbpedia-id-ont:District ;
+    rdfs:label "PabeanCantikan" .
+
+ex-geo:Sawahan a dbpedia-id-ont:District ;
+    rdfs:label "Sawahan" .
+
+ex-geo:Bulak a dbpedia-id-ont:District ;
+    rdfs:label "Bulak" .
+
+ex-geo:Gubeng a dbpedia-id-ont:District ;
+    rdfs:label "Gubeng" .
+
+ex-geo:Krembangan a dbpedia-id-ont:District ;
+    rdfs:label "Krembangan" .
+
+ex-geo:Wonokromo a dbpedia-id-ont:District ;
+    rdfs:label "Wonokromo" .
+
+ex-geo:Semampir a dbpedia-id-ont:District ;
+    rdfs:label "Semampir" .
+
+ex-geo:Tambaksari a dbpedia-id-ont:District ;
+    rdfs:label "Tambaksari" .
+
+ex-geo:KarangPilang a dbpedia-id-ont:District ;
+    rdfs:label "Karang Pilang" .
+
+ex-geo:Sukomanunggal a dbpedia-id-ont:District ;
+    rdfs:label "Sukomanunggal" .
+
+ex-geo:GunungAnyar a dbpedia-id-ont:District ;
+    rdfs:label "Gunung Anyar" .
+
+ex-geo:DukuhPakis a dbpedia-id-ont:District ;
+    rdfs:label "Dukuh Pakis" .
+
+# -- Observations -----------------------------------------
+

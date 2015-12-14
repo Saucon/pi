@@ -40,16 +40,9 @@ eg:dataset-imigran a qb:DataSet;
     rdfs:label      "Imigran di Surabaya";
     rdfs:comment    "Imigran di Surabaya";
     dct:description "Imigran di Surabaya";
-    dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
-
-    qb:structure eg:dsd-imigran ;  
-#    sdmx-attribute:unitMeasure <http://dbpedia.org/resource/Year> ;
-   # qb:slice eg:slice1, eg:slice2, eg:slice3, eg:slice4, eg:slice5, eg:slice6 ;
+    qb:structure eg:dsd-imigran ; 
    .
-
-#eg:organization a org:Organization, foaf:Agent;
-#    rdfs:label "Pemkot Surabaya" . 
 
 # -- Data structure definition ----------------------------
 
@@ -97,7 +90,99 @@ eg:imigran  a rdf:Property, qb:MeasureProperty;
     rdfs:range xsd:integer ;
     .
 
+ # -- Kecamtan -----
+ex-geo:Tandes a dbpedia-id-ont:District ;
+    rdfs:label "Tandes" .
 
+ex-geo:Wiyung a dbpedia-id-ont:District ;
+    rdfs:label "Wiyung" .
+
+ex-geo:Mulyorejo a dbpedia-id-ont:District ;
+    rdfs:label "Mulyorejo" .
+
+ex-geo:Lakasantri a dbpedia-id-ont:District ;
+    rdfs:label "Lakasantri" .
+
+ex-geo:Pakal a dbpedia-id-ont:District ;
+    rdfs:label "Pakal" .
+
+ex-geo:Simokerto a dbpedia-id-ont:District ;
+    rdfs:label "Simokerto" .
+
+ex-geo:Sambikerep a dbpedia-id-ont:District ;
+    rdfs:label "Sambikerep" .
+
+ex-geo:Rungkut a dbpedia-id-ont:District ;
+    rdfs:label "Rungkut" .
+
+ex-geo:Sukolilo a dbpedia-id-ont:District ;
+    rdfs:label "Sukolilo" .
+
+ex-geo:Benowo a dbpedia-id-ont:District ;
+    rdfs:label "Benowo" .
+
+ex-geo:Bubutan a dbpedia-id-ont:District ;
+    rdfs:label "Bubutan" .
+
+ex-geo:Genteng a dbpedia-id-ont:District ;
+    rdfs:label "Genteng" .
+
+ex-geo:Jambangan a dbpedia-id-ont:District ;
+    rdfs:label "Jambangan" .
+
+ex-geo:Tegalsari a dbpedia-id-ont:District ;
+    rdfs:label "Tegalsari" .
+
+ex-geo:Asemrowo a dbpedia-id-ont:District ;
+    rdfs:label "Asemrowo" .
+
+ex-geo:TenggilisMejoyo a dbpedia-id-ont:District ;
+    rdfs:label "Tenggilis Mejoyo" .
+
+ex-geo:Gayungan a dbpedia-id-ont:District ;
+    rdfs:label "Gayungan" .
+
+ex-geo:Kenjeran a dbpedia-id-ont:District ;
+    rdfs:label "Kenjeran" .
+
+ex-geo:Wonocolo a dbpedia-id-ont:District ;
+    rdfs:label "Wonocolo" .
+
+ex-geo:PabeanCantikan a dbpedia-id-ont:District ;
+    rdfs:label "PabeanCantikan" .
+
+ex-geo:Sawahan a dbpedia-id-ont:District ;
+    rdfs:label "Sawahan" .
+
+ex-geo:Bulak a dbpedia-id-ont:District ;
+    rdfs:label "Bulak" .
+
+ex-geo:Gubeng a dbpedia-id-ont:District ;
+    rdfs:label "Gubeng" .
+
+ex-geo:Krembangan a dbpedia-id-ont:District ;
+    rdfs:label "Krembangan" .
+
+ex-geo:Wonokromo a dbpedia-id-ont:District ;
+    rdfs:label "Wonokromo" .
+
+ex-geo:Semampir a dbpedia-id-ont:District ;
+    rdfs:label "Semampir" .
+
+ex-geo:Tambaksari a dbpedia-id-ont:District ;
+    rdfs:label "Tambaksari" .
+
+ex-geo:KarangPilang a dbpedia-id-ont:District ;
+    rdfs:label "Karang Pilang" .
+
+ex-geo:Sukomanunggal a dbpedia-id-ont:District ;
+    rdfs:label "Sukomanunggal" .
+
+ex-geo:GunungAnyar a dbpedia-id-ont:District ;
+    rdfs:label "Gunung Anyar" .
+
+ex-geo:DukuhPakis a dbpedia-id-ont:District ;
+    rdfs:label "Dukuh Pakis" .
 # -- Observations -----------------------------------------
 
 eg:recordImigran1_1
