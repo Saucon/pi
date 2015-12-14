@@ -35,7 +35,6 @@ ex-geo:Negara a rdfs:Class .
 ex-geo:Perusahaan a rdfs:Class .
 
 eg:recordInvestasi a rdfs:Class .
-eg:recordImigran a rdfs:Class .
 # -- Data Set --------------------------------------------
 
 eg:dataset-investasi a qb:DataSet;
