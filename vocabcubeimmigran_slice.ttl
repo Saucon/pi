@@ -98,39 +98,1154 @@ eg:imigran  a rdf:Property, qb:MeasureProperty;
 
 # -- Observations -----------------------------------------
 eg:slice1 a qb:Slice;
-    qb:sliceStructure eg:sliceByDistrict;
-    eg:refPeriod 2009;
-    qb:observation eg:o1_1, eg:o1_2;
-    .
+qb:sliceStructure eg:sliceByDistrict;
+eg:refPeriod 2009;
+qb:observation  eg:o1_1 , eg:o1_2 , eg:o1_3 , eg:o1_4 , eg:o1_5 , eg:o1_6 , eg:o1_7 , eg:o1_8 , eg:o1_9 , eg:o1_10 , eg:o1_11 , eg:o1_12 , eg:o1_13 , eg:o1_14 , eg:o1_15 , eg:o1_16 , eg:o1_17 , eg:o1_18 , eg:o1_19 , eg:o1_20 , eg:o1_21 , eg:o1_22 , eg:o1_23 , eg:o1_24 , eg:o1_25 , eg:o1_26 , eg:o1_27 , eg:o1_28 , eg:o1_29 , eg:o1_30 , eg:o1_31 ;
+.
 
 eg:o1_1 a qb:Observation ;
-    qb:dataSet eg:dataset-imigran;
-    eg:refKecamatan ex-geo:Asemworo;
-    eg:imigran 744;
-    .
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tandes;
+eg:imigran 1083;
+.
 
-eg:o1_1 a qb:Observation ;
-    qb:dataSet eg:dataset-imigran;
-    eg:refKecamatan ex-geo:Benowo;
-    eg:imigran 1568;
-    .
+eg:o1_2 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wiyung;
+eg:imigran 1541;
+.
+
+eg:o1_3 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Mulyorejo;
+eg:imigran 1870;
+.
+
+eg:o1_4 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:imigran 1287;
+.
+
+eg:o1_5 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Pakal;
+eg:imigran 1474;
+.
+
+eg:o1_6 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Simokerto;
+eg:imigran 701;
+.
+
+eg:o1_7 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:imigran 1345;
+.
+
+eg:o1_8 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Rungkut;
+eg:imigran 2611;
+.
+
+eg:o1_9 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukolilo;
+eg:imigran 2267;
+.
+
+eg:o1_10 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Benowo;
+eg:imigran 1568;
+.
+
+eg:o1_11 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bubutan;
+eg:imigran 1250;
+.
+
+eg:o1_12 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Genteng;
+eg:imigran 676;
+.
+
+eg:o1_13 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Jambangan;
+eg:imigran 1447;
+.
+
+eg:o1_14 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tegalsari;
+eg:imigran 895;
+.
+
+eg:o1_15 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:imigran 744;
+.
+
+eg:o1_16 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:imigran 1098;
+.
+
+eg:o1_17 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gayungan;
+eg:imigran 1307;
+.
+
+eg:o1_18 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:imigran 3899;
+.
+
+eg:o1_19 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:imigran 1411;
+.
+
+eg:o1_20 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:imigran 860;
+.
+
+eg:o1_21 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sawahan;
+eg:imigran 3126;
+.
+
+eg:o1_22 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bulak;
+eg:imigran 943;
+.
+
+eg:o1_23 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gubeng;
+eg:imigran 2054;
+.
+
+eg:o1_24 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Krembangan;
+eg:imigran 2612;
+.
+
+eg:o1_25 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:imigran 704;
+.
+
+eg:o1_26 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Semampir;
+eg:imigran 3002;
+.
+
+eg:o1_27 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tambaksari;
+eg:imigran 3465;
+.
+
+eg:o1_28 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:imigran 883;
+.
+
+eg:o1_29 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:imigran 2080;
+.
+
+eg:o1_30 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:imigran 1487;
+.
+
+eg:o1_31 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:imigran 1305;
+.
 
 eg:slice2 a qb:Slice;
-    qb:sliceStructure eg:sliceByDistrict;
-    eg:refPeriod 2010;
-    qb:observation eg:o2_1, eg:o2_2;
-    .
+qb:sliceStructure eg:sliceByDistrict;
+eg:refPeriod 2010;
+qb:observation  eg:o2_1 , eg:o2_2 , eg:o2_3 , eg:o2_4 , eg:o2_5 , eg:o2_6 , eg:o2_7 , eg:o2_8 , eg:o2_9 , eg:o2_10 , eg:o2_11 , eg:o2_12 , eg:o2_13 , eg:o2_14 , eg:o2_15 , eg:o2_16 , eg:o2_17 , eg:o2_18 , eg:o2_19 , eg:o2_20 , eg:o2_21 , eg:o2_22 , eg:o2_23 , eg:o2_24 , eg:o2_25 , eg:o2_26 , eg:o2_27 , eg:o2_28 , eg:o2_29 , eg:o2_30 , eg:o2_31 ;
+.
 
 eg:o2_1 a qb:Observation ;
-    qb:dataSet eg:dataset-imigran;
-    eg:refKecamatan ex-geo:Asemworo;
-    eg:imigran 744;
-    .
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tandes;
+eg:imigran 1993;
+.
 
-eg:o2_1 a qb:Observation ;
-    qb:dataSet eg:dataset-imigran;
-    eg:refKecamatan ex-geo:Benowo;
-    eg:imigran 1568;
-    .
+eg:o2_2 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wiyung;
+eg:imigran 1320;
+.
 
+eg:o2_3 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Mulyorejo;
+eg:imigran 1652;
+.
+
+eg:o2_4 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:imigran 2191;
+.
+
+eg:o2_5 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Pakal;
+eg:imigran 1518;
+.
+
+eg:o2_6 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Simokerto;
+eg:imigran 1634;
+.
+
+eg:o2_7 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:imigran 1168;
+.
+
+eg:o2_8 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Rungkut;
+eg:imigran 2974;
+.
+
+eg:o2_9 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukolilo;
+eg:imigran 2279;
+.
+
+eg:o2_10 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Benowo;
+eg:imigran 1841;
+.
+
+eg:o2_11 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bubutan;
+eg:imigran 2539;
+.
+
+eg:o2_12 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Genteng;
+eg:imigran 1252;
+.
+
+eg:o2_13 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Jambangan;
+eg:imigran 1196;
+.
+
+eg:o2_14 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tegalsari;
+eg:imigran 1817;
+.
+
+eg:o2_15 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:imigran 1228;
+.
+
+eg:o2_16 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:imigran 1042;
+.
+
+eg:o2_17 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gayungan;
+eg:imigran 1006;
+.
+
+eg:o2_18 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:imigran 4463;
+.
+
+eg:o2_19 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:imigran 2097;
+.
+
+eg:o2_20 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:imigran 939;
+.
+
+eg:o2_21 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sawahan;
+eg:imigran 2039;
+.
+
+eg:o2_22 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bulak;
+eg:imigran 1097;
+.
+
+eg:o2_23 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gubeng;
+eg:imigran 2342;
+.
+
+eg:o2_24 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Krembangan;
+eg:imigran 2171;
+.
+
+eg:o2_25 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:imigran 4223;
+.
+
+eg:o2_26 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Semampir;
+eg:imigran 3642;
+.
+
+eg:o2_27 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tambaksari;
+eg:imigran 4096;
+.
+
+eg:o2_28 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:imigran 2241;
+.
+
+eg:o2_29 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:imigran 1446;
+.
+
+eg:o2_30 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:imigran 1328;
+.
+
+eg:o2_31 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:imigran 875;
+.
+
+eg:slice3 a qb:Slice;
+qb:sliceStructure eg:sliceByDistrict;
+eg:refPeriod 2011;
+qb:observation  eg:o3_1 , eg:o3_2 , eg:o3_3 , eg:o3_4 , eg:o3_5 , eg:o3_6 , eg:o3_7 , eg:o3_8 , eg:o3_9 , eg:o3_10 , eg:o3_11 , eg:o3_12 , eg:o3_13 , eg:o3_14 , eg:o3_15 , eg:o3_16 , eg:o3_17 , eg:o3_18 , eg:o3_19 , eg:o3_20 , eg:o3_21 , eg:o3_22 , eg:o3_23 , eg:o3_24 , eg:o3_25 , eg:o3_26 , eg:o3_27 , eg:o3_28 , eg:o3_29 , eg:o3_30 , eg:o3_31 ;
+.
+
+eg:o3_1 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tandes;
+eg:imigran 1092;
+.
+
+eg:o3_2 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wiyung;
+eg:imigran 896;
+.
+
+eg:o3_3 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Mulyorejo;
+eg:imigran 1181;
+.
+
+eg:o3_4 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:imigran 752;
+.
+
+eg:o3_5 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Pakal;
+eg:imigran 984;
+.
+
+eg:o3_6 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Simokerto;
+eg:imigran 1038;
+.
+
+eg:o3_7 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:imigran 700;
+.
+
+eg:o3_8 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Rungkut;
+eg:imigran 2362;
+.
+
+eg:o3_9 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukolilo;
+eg:imigran 2041;
+.
+
+eg:o3_10 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Benowo;
+eg:imigran 1060;
+.
+
+eg:o3_11 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bubutan;
+eg:imigran 1240;
+.
+
+eg:o3_12 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Genteng;
+eg:imigran 653;
+.
+
+eg:o3_13 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Jambangan;
+eg:imigran 883;
+.
+
+eg:o3_14 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tegalsari;
+eg:imigran 1063;
+.
+
+eg:o3_15 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:imigran 502;
+.
+
+eg:o3_16 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:imigran 1113;
+.
+
+eg:o3_17 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gayungan;
+eg:imigran 800;
+.
+
+eg:o3_18 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:imigran 3192;
+.
+
+eg:o3_19 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:imigran 1027;
+.
+
+eg:o3_20 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:imigran 1022;
+.
+
+eg:o3_21 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sawahan;
+eg:imigran 2454;
+.
+
+eg:o3_22 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bulak;
+eg:imigran 727;
+.
+
+eg:o3_23 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gubeng;
+eg:imigran 1643;
+.
+
+eg:o3_24 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Krembangan;
+eg:imigran 1808;
+.
+
+eg:o3_25 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:imigran 1165;
+.
+
+eg:o3_26 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Semampir;
+eg:imigran 1614;
+.
+
+eg:o3_27 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tambaksari;
+eg:imigran 3441;
+.
+
+eg:o3_28 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:imigran 1075;
+.
+
+eg:o3_29 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:imigran 2090;
+.
+
+eg:o3_30 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:imigran 1055;
+.
+
+eg:o3_31 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:imigran 768;
+.
+
+eg:slice4 a qb:Slice;
+qb:sliceStructure eg:sliceByDistrict;
+eg:refPeriod 2012;
+qb:observation  eg:o4_1 , eg:o4_2 , eg:o4_3 , eg:o4_4 , eg:o4_5 , eg:o4_6 , eg:o4_7 , eg:o4_8 , eg:o4_9 , eg:o4_10 , eg:o4_11 , eg:o4_12 , eg:o4_13 , eg:o4_14 , eg:o4_15 , eg:o4_16 , eg:o4_17 , eg:o4_18 , eg:o4_19 , eg:o4_20 , eg:o4_21 , eg:o4_22 , eg:o4_23 , eg:o4_24 , eg:o4_25 , eg:o4_26 , eg:o4_27 , eg:o4_28 , eg:o4_29 , eg:o4_30 , eg:o4_31 ;
+.
+
+eg:o4_1 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tandes;
+eg:imigran 3043;
+.
+
+eg:o4_2 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wiyung;
+eg:imigran 2348;
+.
+
+eg:o4_3 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Mulyorejo;
+eg:imigran 2406;
+.
+
+eg:o4_4 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:imigran 3167;
+.
+
+eg:o4_5 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Pakal;
+eg:imigran 3142;
+.
+
+eg:o4_6 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Simokerto;
+eg:imigran 2862;
+.
+
+eg:o4_7 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:imigran 2038;
+.
+
+eg:o4_8 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Rungkut;
+eg:imigran 6362;
+.
+
+eg:o4_9 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukolilo;
+eg:imigran 4219;
+.
+
+eg:o4_10 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Benowo;
+eg:imigran 4504;
+.
+
+eg:o4_11 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bubutan;
+eg:imigran 3995;
+.
+
+eg:o4_12 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Genteng;
+eg:imigran 1894;
+.
+
+eg:o4_13 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Jambangan;
+eg:imigran 2153;
+.
+
+eg:o4_14 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tegalsari;
+eg:imigran 3394;
+.
+
+eg:o4_15 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:imigran 2628;
+.
+
+eg:o4_16 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:imigran 2693;
+.
+
+eg:o4_17 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gayungan;
+eg:imigran 1723;
+.
+
+eg:o4_18 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:imigran 8124;
+.
+
+eg:o4_19 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:imigran 4295;
+.
+
+eg:o4_20 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:imigran 2116;
+.
+
+eg:o4_21 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sawahan;
+eg:imigran 5193;
+.
+
+eg:o4_22 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bulak;
+eg:imigran 1,307;
+.
+
+eg:o4_23 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gubeng;
+eg:imigran 3990;
+.
+
+eg:o4_24 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Krembangan;
+eg:imigran 4530;
+.
+
+eg:o4_25 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:imigran 5408;
+.
+
+eg:o4_26 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Semampir;
+eg:imigran 5879;
+.
+
+eg:o4_27 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tambaksari;
+eg:imigran 6625;
+.
+
+eg:o4_28 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:imigran 3622;
+.
+
+eg:o4_29 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:imigran 3468;
+.
+
+eg:o4_30 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:imigran 2768;
+.
+
+eg:o4_31 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:imigran 1698;
+.
+
+eg:slice5 a qb:Slice;
+qb:sliceStructure eg:sliceByDistrict;
+eg:refPeriod 2013;
+qb:observation  eg:o5_1 , eg:o5_2 , eg:o5_3 , eg:o5_4 , eg:o5_5 , eg:o5_6 , eg:o5_7 , eg:o5_8 , eg:o5_9 , eg:o5_10 , eg:o5_11 , eg:o5_12 , eg:o5_13 , eg:o5_14 , eg:o5_15 , eg:o5_16 , eg:o5_17 , eg:o5_18 , eg:o5_19 , eg:o5_20 , eg:o5_21 , eg:o5_22 , eg:o5_23 , eg:o5_24 , eg:o5_25 , eg:o5_26 , eg:o5_27 , eg:o5_28 , eg:o5_29 , eg:o5_30 , eg:o5_31 ;
+.
+
+eg:o5_1 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tandes;
+eg:imigran 1528;
+.
+
+eg:o5_2 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wiyung;
+eg:imigran 1642;
+.
+
+eg:o5_3 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Mulyorejo;
+eg:imigran 1976;
+.
+
+eg:o5_4 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:imigran 1370;
+.
+
+eg:o5_5 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Pakal;
+eg:imigran 2146;
+.
+
+eg:o5_6 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Simokerto;
+eg:imigran 1091;
+.
+
+eg:o5_7 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:imigran 1530;
+.
+
+eg:o5_8 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Rungkut;
+eg:imigran 3989;
+.
+
+eg:o5_9 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukolilo;
+eg:imigran 2663;
+.
+
+eg:o5_10 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Benowo;
+eg:imigran 2396;
+.
+
+eg:o5_11 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bubutan;
+eg:imigran 1726;
+.
+
+eg:o5_12 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Genteng;
+eg:imigran 73;
+.
+
+eg:o5_13 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Jambangan;
+eg:imigran 1560;
+.
+
+eg:o5_14 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tegalsari;
+eg:imigran 1852;
+.
+
+eg:o5_15 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:imigran 737;
+.
+
+eg:o5_16 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:imigran 1519;
+.
+
+eg:o5_17 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gayungan;
+eg:imigran 1271;
+.
+
+eg:o5_18 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:imigran 5351;
+.
+
+eg:o5_19 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:imigran 1986;
+.
+
+eg:o5_20 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:imigran 1122;
+.
+
+eg:o5_21 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sawahan;
+eg:imigran 3254;
+.
+
+eg:o5_22 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bulak;
+eg:imigran 1125;
+.
+
+eg:o5_23 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gubeng;
+eg:imigran 2106;
+.
+
+eg:o5_24 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Krembangan;
+eg:imigran 3104;
+.
+
+eg:o5_25 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:imigran 2703;
+.
+
+eg:o5_26 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Semampir;
+eg:imigran 3326;
+.
+
+eg:o5_27 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tambaksari;
+eg:imigran 4478;
+.
+
+eg:o5_28 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:imigran 1642;
+.
+
+eg:o5_29 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:imigran 2566;
+.
+
+eg:o5_30 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:imigran 2055;
+.
+
+eg:o5_31 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:imigran 1161;
+.
+
+eg:slice6 a qb:Slice;
+qb:sliceStructure eg:sliceByDistrict;
+eg:refPeriod 2014;
+qb:observation  eg:o6_1 , eg:o6_2 , eg:o6_3 , eg:o6_4 , eg:o6_5 , eg:o6_6 , eg:o6_7 , eg:o6_8 , eg:o6_9 , eg:o6_10 , eg:o6_11 , eg:o6_12 , eg:o6_13 , eg:o6_14 , eg:o6_15 , eg:o6_16 , eg:o6_17 , eg:o6_18 , eg:o6_19 , eg:o6_20 , eg:o6_21 , eg:o6_22 , eg:o6_23 , eg:o6_24 , eg:o6_25 , eg:o6_26 , eg:o6_27 , eg:o6_28 , eg:o6_29 , eg:o6_30 , eg:o6_31 ;
+.
+
+eg:o6_1 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tandes;
+eg:imigran 982;
+.
+
+eg:o6_2 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wiyung;
+eg:imigran 2125;
+.
+
+eg:o6_3 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Mulyorejo;
+eg:imigran 2371;
+.
+
+eg:o6_4 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:imigran 1635;
+.
+
+eg:o6_5 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Pakal;
+eg:imigran 2310;
+.
+
+eg:o6_6 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Simokerto;
+eg:imigran 3981;
+.
+
+eg:o6_7 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:imigran 2125;
+.
+
+eg:o6_8 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Rungkut;
+eg:imigran 3001;
+.
+
+eg:o6_9 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukolilo;
+eg:imigran 3420;
+.
+
+eg:o6_10 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Benowo;
+eg:imigran 3071;
+.
+
+eg:o6_11 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bubutan;
+eg:imigran 1,318;
+.
+
+eg:o6_12 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Genteng;
+eg:imigran 503;
+.
+
+eg:o6_13 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Jambangan;
+eg:imigran 1795;
+.
+
+eg:o6_14 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tegalsari;
+eg:imigran 278;
+.
+
+eg:o6_15 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:imigran 2545;
+.
+
+eg:o6_16 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:imigran 1872;
+.
+
+eg:o6_17 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gayungan;
+eg:imigran 1541;
+.
+
+eg:o6_18 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:imigran 5192;
+.
+
+eg:o6_19 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:imigran 2630;
+.
+
+eg:o6_20 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:imigran 2346;
+.
+
+eg:o6_21 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sawahan;
+eg:imigran 3726;
+.
+
+eg:o6_22 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Bulak;
+eg:imigran 1805;
+.
+
+eg:o6_23 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Gubeng;
+eg:imigran 1152;
+.
+
+eg:o6_24 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Krembangan;
+eg:imigran 2449;
+.
+
+eg:o6_25 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:imigran 1471;
+.
+
+eg:o6_26 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Semampir;
+eg:imigran 3430;
+.
+
+eg:o6_27 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Tambaksari;
+eg:imigran 2612;
+.
+
+eg:o6_28 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:imigran 1102;
+.
+
+eg:o6_29 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:imigran 1150;
+.
+
+eg:o6_30 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:imigran 1856;
+.
+
+eg:o6_31 a qb:Observation ;
+qb:dataSet eg:dataset-imigran;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:imigran 1622;
+.
 
