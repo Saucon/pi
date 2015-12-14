@@ -44,6 +44,7 @@ eg:dataset-investasi a qb:DataSet;
     dct:description "Investasi di Surabaya";
     dct:issued      "2015-12-07"^^xsd:date;
     qb:structure eg:dsd-investasi ;  
+    qb:Slice eg:slice1, eg:slice2;
     .
 
 # -- Data structure definition ----------------------------
@@ -63,7 +64,7 @@ eg:dsd-investasi a qb:DataStructureDefinition;
 
     qb:sliceKey eg:sliceByDistrict ;
     .
-    
+
 # -- Slice Key definition ----------------------------
 eg:sliceByDistrict a qb:SliceKey;
     rdfs:label "Slice berdasarkan Kecamatan";
