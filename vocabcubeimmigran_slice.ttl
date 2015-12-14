@@ -41,7 +41,7 @@ eg:dataset-imigran a qb:DataSet;
     dct:publisher   eg:organization ;
     dct:issued      "2015-12-07"^^xsd:date;
     qb:structure eg:dsd-imigran ; 
-    qb:Slice eg:slice1;
+    qb:Slice eg:slice1, eg:slice2;
    .
 
 eg:organization a org:Organization, foaf:Agent;
@@ -66,7 +66,7 @@ eg:dsd-imigran a qb:DataStructureDefinition;
  .
 
 # -- Slice Key definition ----------------------------
-eg:sliceByDistrict a qb:sliceKey;
+eg:sliceByDistrict a qb:SliceKey;
     rdfs:label "Slice berdasarkan Kecamatan";
     qb:componentProperty eg:refPeriod; 
 .
@@ -100,17 +100,35 @@ eg:imigran  a rdf:Property, qb:MeasureProperty;
 eg:slice1 a qb:Slice;
     qb:sliceStructure eg:sliceByDistrict;
     eg:refPeriod 2009;
-    qb:Observation eg:o1_1, eg:o1_2;
+    qb:observation eg:o1_1, eg:o1_2;
     .
 
 eg:o1_1 a qb:Observation ;
-    qb:dataset eg:dataset-imigran;
+    qb:dataSet eg:dataset-imigran;
     eg:refKecamatan ex-geo:Asemworo;
     eg:imigran 744;
     .
 
 eg:o1_1 a qb:Observation ;
-    qb:dataset eg:dataset-imigran;
+    qb:dataSet eg:dataset-imigran;
+    eg:refKecamatan ex-geo:Benowo;
+    eg:imigran 1568;
+    .
+
+eg:slice2 a qb:Slice;
+    qb:sliceStructure eg:sliceByDistrict;
+    eg:refPeriod 2010;
+    qb:observation eg:o2_1, eg:o2_2;
+    .
+
+eg:o2_1 a qb:Observation ;
+    qb:dataSet eg:dataset-imigran;
+    eg:refKecamatan ex-geo:Asemworo;
+    eg:imigran 744;
+    .
+
+eg:o2_1 a qb:Observation ;
+    qb:dataSet eg:dataset-imigran;
     eg:refKecamatan ex-geo:Benowo;
     eg:imigran 1568;
     .
