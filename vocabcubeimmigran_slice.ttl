@@ -59,6 +59,9 @@ eg:dsd-imigran a qb:DataStructureDefinition;
     # The measure(s)
    qb:component[qb:measure eg:imigran];
 
+   qb:component [qb:componentRequired "true"^^xsd:boolean;
+                qb:componentAttachment qb:DataSet;];
+
    qb:sliceKey eg:sliceByDistrict ;
  .
 
