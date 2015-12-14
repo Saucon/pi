@@ -20,8 +20,8 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ex-geo:   <http://example.org/geo#> .
-@prefix eg:       <http://example.org/ns#> .
+@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/contoh_slice.ttl#> .
+@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/contoh_slice.ttl#> .
 
 # -- Data Set --------------------------------------------
 
