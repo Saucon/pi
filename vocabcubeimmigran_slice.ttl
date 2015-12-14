@@ -54,7 +54,7 @@ eg:dsd-imigran a qb:DataStructureDefinition;
     qb:component 
    #  The dimensions
         [qb:dimension eg:refKecamatan; qb:order 1],
-        [qb:dimension eg:refPeriod qb:order 2;qb:componentAttachment qb:Slice],
+        [qb:dimension eg:refPeriod; qb:order 2; qb:componentAttachment qb:Slice];
         
     # The measure(s)
    qb:component[qb:measure eg:imigran];
@@ -66,6 +66,7 @@ eg:dsd-imigran a qb:DataStructureDefinition;
 eg:sliceByDistrict a qb:sliceKey;
     rdfs:label "Slice berdasarkan Kecamatan";
     qb:componentProperty eg:refPeriod; 
+.
 
 # -- Dimensions and measures  ----------------------------
     # -- Dimensions
