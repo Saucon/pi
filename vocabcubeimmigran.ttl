@@ -45,8 +45,6 @@ eg:dataset-imigran a qb:DataSet;
    .
 
 # -- Data structure definition ----------------------------
-
-    
 eg:dsd-imigran a qb:DataStructureDefinition;
     qb:component 
    #  The dimensions

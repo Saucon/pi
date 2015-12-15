@@ -53,7 +53,7 @@ eg:dsd-investasi a qb:DataStructureDefinition;
     # The dimensions
         
         [ qb:dimension eg:refKecamatan ; qb:order 1],
-        [ qb:dimension eg:jenisPermodalan; qb:order 2; qb:componentAttachment qb:Slice],
+        [ qb:dimension eg:jenisPermodalan; qb:order 2; qb:componentAttachment qb:Slice];
         
     # The measure(s)
     qb:component[qb:measure eg:investasiRupiah],
@@ -217,4 +217,17 @@ ex-geo:DukuhPakis a dbpedia-id-ont:District ;
     rdfs:label "Dukuh Pakis" .
 
 # -- Observations -----------------------------------------
+eg:slice1 a qb:Slice;
+qb:sliceStructure eg:sliceByDistrict;
+eg:jenisPermodalan eg:PMA;
+qb:observation  eg:o1_1 ;
+.
+
+eg:01_1 a qb:Observation ;
+eg:dataSet eg:dataset-investasi;
+eg:refArea eg:Asemrowo;
+eg:investasiRupiah 0;
+eg:investasiDolar 1900;
+.
+
 
