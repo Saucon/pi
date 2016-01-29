@@ -20,8 +20,8 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
-@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/vocabcube.ttl#> .
+@prefix ex-geo:   <http://localhost:3030/ds-investasi/sparql#> .
+@prefix eg:       <http://localhost:3030/ds-investasi/sparql#> .
 
 @prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
 @prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
@@ -105,6 +105,7 @@ eg:sektor a rdf:Property, qb:DimensionProperty;
     rdfs:range skos:Concept ;
     qb:codeList eg:sektorCodeList ;
     .
+
 
 
 # -- Measure
@@ -317,8 +318,8 @@ ex-geo:Wiyung a dbpedia-id-ont:District ;
 ex-geo:Mulyorejo a dbpedia-id-ont:District ;
     rdfs:label "Mulyorejo" .
 
-ex-geo:Lakasantri a dbpedia-id-ont:District ;
-    rdfs:label "Lakasantri" .
+ex-geo:Lakarsantri a dbpedia-id-ont:District ;
+    rdfs:label "Lakarsantri" .
 
 ex-geo:Pakal a dbpedia-id-ont:District ;
     rdfs:label "Pakal" .

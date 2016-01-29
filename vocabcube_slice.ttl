@@ -30,11 +30,7 @@
 @prefix dbpediaont: <http://dbpedia.org/ontology/> .
 #@prefix dbpediaprop: <http://dbpedia.org/property/> .
 
-# -- Vocab -----------------------------------------------
-ex-geo:Negara a rdfs:Class .
-ex-geo:Perusahaan a rdfs:Class .
 
-eg:recordInvestasi a rdfs:Class .
 # -- Data Set --------------------------------------------
 
 eg:dataset-investasi a qb:DataSet;
@@ -68,7 +64,7 @@ eg:dsd-investasi a qb:DataStructureDefinition;
 # -- Slice Key definition ----------------------------
 eg:sliceByDistrict a qb:SliceKey;
     rdfs:label "Slice berdasarkan Kecamatan";
-    qb:componentProperty eg:refPeriod; 
+    qb:componentProperty eg:jenisPermodalan; 
 .
 
 # -- Dimensions and measures  ----------------------------
@@ -220,14 +216,264 @@ ex-geo:DukuhPakis a dbpedia-id-ont:District ;
 eg:slice1 a qb:Slice;
 qb:sliceStructure eg:sliceByDistrict;
 eg:jenisPermodalan eg:PMA;
-qb:observation  eg:o1_1 ;
+qb:observation  eg:o1_1 , eg:o1_2 , eg:o1_3 , eg:o1_4 , eg:o1_5 , eg:o1_6 , eg:o1_7 , eg:o1_8 , eg:o1_9 , eg:o1_10 , eg:o1_11 , eg:o1_12 , eg:o1_13 , eg:o1_14 , eg:o1_15 , eg:o1_16 , eg:o1_17 , eg:o1_18 ;
 .
 
-eg:01_1 a qb:Observation ;
-eg:dataSet eg:dataset-investasi;
-eg:refArea eg:Asemrowo;
+eg:o1_1 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:investasiRupiah 1900;
+eg:investasiDolar 0;
+.
+
+eg:o1_2 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Bubutan;
 eg:investasiRupiah 0;
-eg:investasiDolar 1900;
+eg:investasiDolar 0;
 .
 
+eg:o1_3 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:investasiRupiah 1001000;
+eg:investasiDolar 0;
+.
+
+eg:o1_4 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Genteng;
+eg:investasiRupiah 0;
+eg:investasiDolar 321000000000;
+.
+
+eg:o1_5 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:investasiRupiah 150;
+eg:investasiDolar 0;
+.
+
+eg:o1_6 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o1_7 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o1_8 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Krembangan;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o1_9 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:investasiRupiah 2400000;
+eg:investasiDolar 0;
+.
+
+eg:o1_10 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:investasiRupiah 1000000;
+eg:investasiDolar 0;
+.
+
+eg:o1_11 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Pakal;
+eg:investasiRupiah 2000000;
+eg:investasiDolar 0;
+.
+
+eg:o1_12 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Rungkut;
+eg:investasiRupiah 36732430;
+eg:investasiDolar 0;
+.
+
+eg:o1_13 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:investasiRupiah 5000000;
+eg:investasiDolar 0;
+.
+
+eg:o1_14 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:investasiRupiah 3047600;
+eg:investasiDolar 39723364;
+.
+
+eg:o1_15 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Tandes;
+eg:investasiRupiah 9263202;
+eg:investasiDolar 140001220000;
+.
+
+eg:o1_16 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:investasiRupiah 38586496;
+eg:investasiDolar 0;
+.
+
+eg:o1_17 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o1_18 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:investasiRupiah 7636400;
+eg:investasiDolar 0;
+.
+
+eg:slice2 a qb:Slice;
+qb:sliceStructure eg:sliceByDistrict;
+eg:jenisPermodalan eg:PMDN;
+qb:observation  eg:o2_1 , eg:o2_2 , eg:o2_3 , eg:o2_4 , eg:o2_5 , eg:o2_6 , eg:o2_7 , eg:o2_8 , eg:o2_9 , eg:o2_10 , eg:o2_11 , eg:o2_12 , eg:o2_13 , eg:o2_14 , eg:o2_15 , eg:o2_16 , eg:o2_17 , eg:o2_18 ;
+.
+
+eg:o2_1 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Asemrowo;
+eg:investasiRupiah 0;
+eg:investasiDolar 3000000000;
+.
+
+eg:o2_2 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Bubutan;
+eg:investasiRupiah 0;
+eg:investasiDolar 7248500000;
+.
+
+eg:o2_3 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:DukuhPakis;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_4 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Genteng;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_5 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:GunungAnyar;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_6 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:KarangPilang;
+eg:investasiRupiah 5600000;
+eg:investasiDolar 0;
+.
+
+eg:o2_7 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Kenjeran;
+eg:investasiRupiah 0;
+eg:investasiDolar 36000000000;
+.
+
+eg:o2_8 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Krembangan;
+eg:investasiRupiah 0;
+eg:investasiDolar 178250000000;
+.
+
+eg:o2_9 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Lakarsantri;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_10 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:PabeanCantikan;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_11 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Pakal;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_12 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Rungkut;
+eg:investasiRupiah 0;
+eg:investasiDolar 5500000000;
+.
+
+eg:o2_13 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Sambikerep;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_14 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Sukomanunggal;
+eg:investasiRupiah 0;
+eg:investasiDolar 12500000000;
+.
+
+eg:o2_15 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Tandes;
+eg:investasiRupiah 0;
+eg:investasiDolar 11718000000;
+.
+
+eg:o2_16 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:TenggilisMejoyo;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
+
+eg:o2_17 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Wonocolo;
+eg:investasiRupiah 0;
+eg:investasiDolar 16125000000;
+.
+
+eg:o2_18 a qb:Observation ;
+qb:dataSet eg:dataset-investasi;
+eg:refKecamatan ex-geo:Wonokromo;
+eg:investasiRupiah 0;
+eg:investasiDolar 0;
+.
 

@@ -20,8 +20,8 @@
 @prefix sdmx-code:       <http://purl.org/linked-data/sdmx/2009/code#> .
 @prefix sdmx-subject:    <http://purl.org/linked-data/sdmx/2009/subject#> .
 
-@prefix ex-geo:   <https://raw.githubusercontent.com/Saucon/pi/master/vocabcubeimmigran_slice.ttl#> .
-@prefix eg:       <https://raw.githubusercontent.com/Saucon/pi/master/vocabcubeimmigran_slice.ttl#> .
+@prefix ex-geo:   <http://localhost:3030/ds-imigran-slice/sparql#> .
+@prefix eg:       <http://localhost:3030/ds-imigran-slice/sparql#> .
 
 @prefix dbpedia-id-res: <http://id.dbpedia.org/resource/> .
 @prefix dbpedia-id-ont: <http://id.dbpedia.org/ontology/> .
@@ -33,7 +33,7 @@
 # -- Data Set --------------------------------------------
 
 
-eg:dataset-imigran a qb:DataSet;
+eg:dataset-imigran-slice a qb:DataSet;
    dct:title       "Imigran di Surabaya";
     rdfs:label      "Imigran di Surabaya";
     rdfs:comment    "Imigran di Surabaya";
